@@ -1,0 +1,37 @@
+# On strings, note the following: only lowercase alphanumeric characters, hyphens, underscores, periods, and spaces allowed.
+
+# Type: String, must be a valid AWS region
+aws_region = "<aws region>"
+
+# Type: String, must be a valid AWS AZ
+aws_az1 = "<aws az1>"
+
+# Type: String, must be a valid AWS AZ
+aws_az2 = "<aws az2>"
+
+# Type: String, note restrictions above
+mgmt_vpc_name = "<name of mgmt VPC>"
+
+# Type: String (but make it a CIDR range like 10.0.0.0/16)
+mgmt_vpc_cidr = "<cidr range>"
+
+# Type: String (but make it a CIDR range like 10.0.0.0/16)
+public_subnet_cidr = "<cidr range>"
+
+# Type: String (but make it a CIDR range like 10.0.0.0/16)
+private_subnet_cidr = "<cidr range>"
+
+# Type: List, comma-delimited (but make them a CIDR range like 10.0.0.0/16)
+database_subnet_cidrs = ["<cidr range>", "<cidr range>"]
+
+# Type: string, only "true" or "false" valid
+mgmt_nat_gateway = "<true or false>"
+
+# Type: string, only "true" or "false" valid
+mgmt_dns_hostnames = "<true or false"
+
+# Type: string, only "true" or "false" valid
+mgmt_dns_support = "<true or false>"
+
+# Type: string, it's a DNS zone name so don't get crazy
+private_mgmt_zone_name = "<dns zone name>"

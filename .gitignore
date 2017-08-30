@@ -1,6 +1,10 @@
 ## Terraform ##
+#
+# Ignore private variables
 *.tfvars
+#
 # Compiled files
 *.tfstate*
+#
 # Module directory
 .terraform/

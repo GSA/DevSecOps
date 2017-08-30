@@ -1,0 +1,4 @@
+# This will be used to init the backend during "terraform init" (see README.MD)
+# These values must match the bucket you created.
+bucket = "<bucket-name>"
+key = "<folder/file>"
