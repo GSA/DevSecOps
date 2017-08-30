@@ -64,18 +64,12 @@ The code follows the [Don't Repeat Yourself (DRY)](https://en.wikipedia.org/wiki
 For initial or subsequent deployment, assuming you already executed the init above:
 
 1. Verify that terraform understands what it's going to do.
+    
     ```sh
     terraform plan
     ```
 1. If everything looks fine, deploy up environment using Terraform.
+
     ```sh
     terraform apply
-    ```
-
-## Remove Deployment
-
-If you're tired of the environment, you can tear it down with:
-
-    ```sh
-    terraform destroy
     ```
