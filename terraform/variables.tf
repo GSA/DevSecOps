@@ -34,3 +34,12 @@ variable "mgmt_dns_support" {
 variable "private_mgmt_zone_name" {
   type = "string"
 }
+variable "mgmt_flow_log_group_name" {
+  type = "string"
+}
+variable "devsecops_iam_log_role_name" {
+  type = "string"
+}
+variable "devsecops_flow_log_policy" {
+  type = "string"
+}
