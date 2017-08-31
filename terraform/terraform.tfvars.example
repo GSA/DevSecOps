@@ -16,13 +16,13 @@ mgmt_vpc_name = "<name of mgmt VPC>"
 mgmt_vpc_cidr = "<cidr range>"
 
 # Type: String (but make it a CIDR range like 10.0.0.0/16)
-public_subnet_cidr = "<cidr range>"
+mgmt_public_subnet_cidr = "<cidr range>"
 
 # Type: String (but make it a CIDR range like 10.0.0.0/16)
-private_subnet_cidr = "<cidr range>"
+mgmt_private_subnet_cidr = "<cidr range>"
 
 # Type: List, comma-delimited (but make them a CIDR range like 10.0.0.0/16)
-database_subnet_cidrs = ["<cidr range>", "<cidr range>"]
+mgmt_database_subnet_cidrs = ["<cidr range>", "<cidr range>"]
 
 # Type: string, only "true" or "false" valid
 mgmt_nat_gateway = "<true or false>"
