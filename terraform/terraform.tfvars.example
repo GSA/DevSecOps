@@ -15,11 +15,11 @@ mgmt_vpc_name = "<name of mgmt VPC>"
 # Type: String (but make it a CIDR range like 10.0.0.0/16)
 mgmt_vpc_cidr = "<cidr range>"
 
-# Type: String (but make it a CIDR range like 10.0.0.0/16)
-mgmt_public_subnet_cidr = "<cidr range>"
+# Type: List (but make it a CIDR range like 10.0.0.0/16)
+mgmt_public_subnet_cidrs = ["<cidr range>", "<cidr range>"]
 
-# Type: String (but make it a CIDR range like 10.0.0.0/16)
-mgmt_private_subnet_cidr = "<cidr range>"
+# Type: List (but make it a CIDR range like 10.0.0.0/16)
+mgmt_private_subnet_cidrs = ["<cidr range>", "<cidr range>"]
 
 # Type: List, comma-delimited (but make them a CIDR range like 10.0.0.0/16)
 mgmt_database_subnet_cidrs = ["<cidr range>", "<cidr range>"]

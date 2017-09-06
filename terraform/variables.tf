@@ -13,11 +13,11 @@ variable "mgmt_vpc_name" {
 variable "mgmt_vpc_cidr" {
   type = "string"
 }
-variable "mgmt_public_subnet_cidr" {
-  type = "string"
+variable "mgmt_public_subnet_cidrs" {
+  type = "list"
 }
-variable "mgmt_private_subnet_cidr" {
-  type = "string"
+variable "mgmt_private_subnet_cidrs" {
+  type = "list"
 }
 variable "mgmt_database_subnet_cidrs" {
   type = "list"

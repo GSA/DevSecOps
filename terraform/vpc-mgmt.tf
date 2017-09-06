@@ -8,8 +8,8 @@ module "mgmt-vpc" {
   name = "${var.mgmt_vpc_name}"
 
   cidr = "${var.mgmt_vpc_cidr}"
-  public_subnets  = ["${var.mgmt_public_subnet_cidr}"]
-  private_subnets = ["${var.mgmt_private_subnet_cidr}"]
+  public_subnets  = ["${var.mgmt_public_subnet_cidrs}"]
+  private_subnets = ["${var.mgmt_private_subnet_cidrs}"]
   database_subnets = ["${var.mgmt_database_subnet_cidrs}"]
 
   enable_nat_gateway = "${var.mgmt_nat_gateway}"
