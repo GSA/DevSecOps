@@ -42,5 +42,5 @@ mgmt_flow_log_group_name = "<name_of_a_log_group>"
 # Type: string, just a name for the IAM role that will be attached to the VPC logging
 devsecops_iam_log_role_name = "<name_for_iam_log_role"
 
-$ Type: string, just a name for the log policy to attach to the VPCs
+# Type: string, just a name for the log policy to attach to the VPCs
 devsecops_flow_log_policy = "<name_for_flow_log_policy"
