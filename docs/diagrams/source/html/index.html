@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DevSecOps Framework Diagrams</title>
+    <link rel="stylesheet" href="render.css">
+  </head>
+  <body>
+    <h1>DevSecOps Framework Diagrams</h1>
+    <ul class="scuttle-diagram-list">
+    {{ #diagram-list }}
+      <li class="scuttle-diagram-list__item">
+        <a class="usa-button" href="{{ href }}">{{ name }}</a>
+	{{ description }}
+      </li>
+    {{ /diagram-list }}
+    </ul>
+  </body>
+</html>
