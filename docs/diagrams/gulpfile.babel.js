@@ -79,8 +79,7 @@ gulp.task( 'javascript', () => {
         babelify,
         {
           presets: [
-            'es2015',
-            'es2016'
+            'env'
           ],
         }
       ],
