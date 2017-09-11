@@ -1,0 +1,27 @@
+html {
+  background-color: $color-white;
+}
+
+body {
+  background-color: $color-gray-lightest;
+  margin: 5%;
+  padding: 2.5%;
+}
+
+.scuttle-stage {
+  margin: 5% 0;
+}
+
+/**
+ * Diagram list for the Homepage
+ */
+.scuttle-diagram-list {
+  margin: 2.5%;
+}
+
+.scuttle-diagram-list__item {
+  // Necessary because of the Draft US Web Design Standards
+  &::before {
+    content: '';
+  }
+}

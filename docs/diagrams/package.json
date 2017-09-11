@@ -1,0 +1,36 @@
+{
+  "name": "cg-diagrams",
+  "description": "Mermaid-based flow charts and diagrams using the US Draft Web Design Standards",
+  "private": true,
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "prestart": "gulp clean",
+    "start": "gulp server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-preset-env": "^1.6.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.15.0",
+    "browserify": "^14.4.0",
+    "connect": "^3.4.1",
+    "del": "^3.0.0",
+    "figlet": "^1.1.2",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.7",
+    "mermaid": "^6.0.0",
+    "mustache": "^2.2.1",
+    "node-notifier": "^5.1.0",
+    "node-sass": "^4.5.0",
+    "save-svg-as-png": "^1.2.0",
+    "serve-static": "^1.11.1",
+    "through2": "^2.0.1",
+    "uswds": "^1.3.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
