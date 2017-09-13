@@ -1,8 +1,5 @@
 # On strings, note the following: only lowercase alphanumeric characters, hyphens, underscores, periods, and spaces allowed.
 
-# Type: String, must be a valid AWS region
-aws_region = "<aws region>"
-
 # Type: String, must be a valid AWS AZ
 aws_az1 = "<aws az1>"
 

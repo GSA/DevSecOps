@@ -1,6 +1,3 @@
-variable "aws_region" {
-  type = "string"
-}
 variable "aws_az1" {
   type = "string"
 }

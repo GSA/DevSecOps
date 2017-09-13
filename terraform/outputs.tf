@@ -1,7 +1,3 @@
-output "aws_region" {
-  value = "${var.aws_region}"
-}
-
 output "aws_az1" {
   value = "${var.aws_az1}"
 }
