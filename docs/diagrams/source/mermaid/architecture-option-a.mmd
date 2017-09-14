@@ -1,13 +1,13 @@
 %% title: Architecture Option A
 %% description: DevSecOps high level architecture Option A
-graph TD
-  subgraph SecOps Services
-    secops-endpoint["VPN endpoint"]
+graph LR
+  gsa-users(("GSA Network Users"))
+  subgraph SecOps Maintained Services VPC
+    vpc-router-secops["VPC Router"]
     secops-elk["ELK"]
     secops-nessusmanager["Nessus Manager"]
   end
   subgraph AWS subaccount
-    vpn-endpoint["VPN endpoint"]
     iam["AWS IAM"]
     iam-perms["AWS IAM Permissions"]
     iam-roles["AWS IAM Roles"]
@@ -18,10 +18,12 @@ graph TD
     cloudwatch["AWS CloudWatch Metrics"]
     cloudwatch-logs["AWS CloudWatch Logs"]
     cloudtrail["AWS CloudTrail"]
+    vpc-peering-secops["VPC Peering Connection - SecOps"]
     subgraph Application VPC
       subgraph Availability Zones us-east-1a/b
         subgraph Public Subnet
           app-nat["NAT Gateway"]
+          app-elb["Load Balancer"]
         end
         subgraph Private Subnet
           app-app["Application"]
@@ -32,12 +34,13 @@ graph TD
       end
       vpc-router-apps["VPC Router"]
     end
-    vpc-peering["VPC Peering Connection"]
+    vpc-peering-pipeline["VPC Peering Connection - Internal"]
     subgraph Management VPC
       vpc-router-mgmt["VPC Router"]
       subgraph Availability Zones us-east-1a/b
         subgraph Public Subnet
           mgmt-nat["NAT Gateway"]
+          mgmt-jumpbox["Jumpbox"]
         end
         subgraph Private Subnet - Database
           mgmt-rds{"AWS RDS instances"}
@@ -45,12 +48,11 @@ graph TD
         subgraph Private Subnet
           mgmt-jenkins["Jenkins"]
           mgmt-elk["ELK"]
+          mgmt-monitoring["Metrics/Monitoring"]
         end
       end
     end
   end
-
-  secops-endpoint---vpn-endpoint
 
   cloudwatch-logs-- Encrypted log data only --- kinesis
 
@@ -58,13 +60,23 @@ graph TD
   iam-.->iam-perms
   iam-perms-.->iam-roles
 
-  vpc-router-mgmt-->vpc-peering
-  vpc-router-apps-->vpc-peering
+  vpc-router-secops---vpc-peering-secops
+  vpc-router-mgmt---vpc-peering-pipeline
+  vpc-router-mgmt---vpc-peering-secops
+  vpc-router-mgmt---mgmt-nat
+  vpc-router-apps---vpc-peering-pipeline
+  vpc-router-apps---vpc-peering-secops
+  vpc-router-apps---app-nat
 
-  app-nat---app-app
-  app-nat---app-rds
+  app-elb-->app-nat
+  app-nat--SecurityGroup---app-app
+  app-nat--SecurityGroup---app-rds
 
-  mgmt-nat---mgmt-rds
-  mgmt-nat---mgmt-jenkins
+  mgmt-nat--SecurityGroup---mgmt-rds
+  mgmt-nat--SecurityGroup---mgmt-jenkins
+  mgmt-nat--SecurityGroup---mgmt-elk
+  mgmt-nat--SecurityGroup---mgmt-monitoring
+
+  gsa-users--SecurityGroup-->app-elb
 
 
