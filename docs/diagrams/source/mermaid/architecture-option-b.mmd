@@ -10,6 +10,7 @@ graph LR
   subgraph IDI Maintained VPC
     vpc-router-mgmt["VPC Router"]
     mgmt-jenkins["Jenkins"]
+    mgmt-artifact-repository["Artifact Repository"]
     mgmt-elk["ELK"]
     mgmt-monitoring["Metrics/Monitoring"]
   end
@@ -59,6 +60,7 @@ graph LR
   vpc-router-secops--SecurityGroup---secops-nessusmanager
 
   vpc-router-mgmt--SecurityGroup---mgmt-jenkins
+  vpc-router-mgmt--SecurityGroup---mgmt-artifact-repository
   vpc-router-mgmt--SecurityGroup---mgmt-elk
   vpc-router-mgmt--SecurityGroup---mgmt-monitoring
 

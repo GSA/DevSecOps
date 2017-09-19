@@ -49,6 +49,7 @@ graph LR
         end
         subgraph Private Subnet
           mgmt-jenkins["Jenkins"]
+          mgmt-artifact-repository["Artifact Repository"]
           mgmt-elk["ELK"]
           mgmt-monitoring["Metrics/Monitoring"]
         end
@@ -77,6 +78,7 @@ graph LR
 
   mgmt-nat--SecurityGroup---mgmt-rds
   mgmt-nat--SecurityGroup---mgmt-jenkins
+  mgmt-nat--SecurityGroup---mgmt-artifact-repository
   mgmt-nat--SecurityGroup---mgmt-elk
   mgmt-nat--SecurityGroup---mgmt-monitoring
 
