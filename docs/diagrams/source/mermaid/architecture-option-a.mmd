@@ -12,9 +12,11 @@ graph LR
     iam-perms["AWS IAM Permissions"]
     iam-roles["AWS IAM Roles"]
     aws-console["AWS Console"]
+    aws-cli["AWS CLI"]
     s3["AWS S3"]
     kinesis["AWS Kinesis"]
     route53["AWS Route 53"]
+    aws-sqs["AWS SQS"]
     cloudwatch["AWS CloudWatch Metrics"]
     cloudwatch-logs["AWS CloudWatch Logs"]
     cloudtrail["AWS CloudTrail"]
@@ -57,6 +59,7 @@ graph LR
   cloudwatch-logs-- Encrypted log data only --- kinesis
 
   aws-console-."Authentication/Authorization".->iam
+  aws-cli-."Authentication/Authorization".->iam
   iam-.->iam-perms
   iam-perms-.->iam-roles
 
