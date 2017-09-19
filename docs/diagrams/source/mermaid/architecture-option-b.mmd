@@ -9,10 +9,21 @@ graph LR
   end
   subgraph IDI Maintained VPC
     vpc-router-mgmt["VPC Router"]
-    mgmt-jenkins["Jenkins"]
-    mgmt-artifact-repository["Artifact Repository"]
-    mgmt-log["Logging stack"]
-    mgmt-monitoring["Metrics/Monitoring"]
+    subgraph Availability Zones us-east-1a/b
+      subgraph Public Subnet
+        mgmt-nat["NAT Gateway"]
+        mgmt-jumpbox["Jumpbox"]
+      end
+      subgraph Private Subnet - Database
+        mgmt-rds{"AWS RDS instances"}
+      end
+      subgraph Private Subnet
+        mgmt-jenkins["Jenkins"]
+        mgmt-artifact-repository["Artifact Repository"]
+        mgmt-log["Logging stack"]
+        mgmt-monitoring["Metrics/Monitoring"]
+      end
+    end
   end
   subgraph AWS subaccount
     iam["AWS IAM"]
@@ -60,10 +71,13 @@ graph LR
   vpc-router-secops--SecurityGroup---secops-log
   vpc-router-secops--SecurityGroup---secops-nessusmanager
 
-  vpc-router-mgmt--SecurityGroup---mgmt-jenkins
-  vpc-router-mgmt--SecurityGroup---mgmt-artifact-repository
-  vpc-router-mgmt--SecurityGroup---mgmt-log
-  vpc-router-mgmt--SecurityGroup---mgmt-monitoring
+  vpc-router-mgmt---mgmt-nat
+
+  mgmt-nat--SecurityGroup---mgmt-rds
+  mgmt-nat--SecurityGroup---mgmt-jenkins
+  mgmt-nat--SecurityGroup---mgmt-artifact-repository
+  mgmt-nat--SecurityGroup---mgmt-log
+  mgmt-nat--SecurityGroup---mgmt-monitoring
 
   vpc-router-apps---vpc-peering-pipeline
   vpc-router-apps---vpc-peering-secops
