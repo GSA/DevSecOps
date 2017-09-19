@@ -4,13 +4,13 @@ graph LR
   gsa-users(("GSA Network Users"))
   subgraph SecOps Maintained VPC
     vpc-router-secops["VPC Router"]
-    secops-elk["ELK"]
+    secops-log["SecOps logging stack"]
     secops-nessusmanager["Nessus Manager"]
   end
   subgraph IDI Maintained VPC
     vpc-router-mgmt["VPC Router"]
     mgmt-jenkins["Jenkins"]
-    mgmt-elk["ELK"]
+    mgmt-log["Logging stack"]
     mgmt-monitoring["Metrics/Monitoring"]
   end
   subgraph AWS subaccount
@@ -20,6 +20,7 @@ graph LR
     aws-console["AWS Console"]
     s3["AWS S3"]
     kinesis["AWS Kinesis"]
+    elasticsearch["AWS Elasticsearch Service"]
     route53["AWS Route 53"]
     cloudwatch["AWS CloudWatch Metrics"]
     cloudwatch-logs["AWS CloudWatch Logs"]
@@ -52,11 +53,11 @@ graph LR
   vpc-peering-pipeline---vpc-router-mgmt
   vpc-peering-secops---vpc-router-secops
 
-  vpc-router-secops--SecurityGroup---secops-elk
+  vpc-router-secops--SecurityGroup---secops-log
   vpc-router-secops--SecurityGroup---secops-nessusmanager
 
   vpc-router-mgmt--SecurityGroup---mgmt-jenkins
-  vpc-router-mgmt--SecurityGroup---mgmt-elk
+  vpc-router-mgmt--SecurityGroup---mgmt-log
   vpc-router-mgmt--SecurityGroup---mgmt-monitoring
 
   vpc-router-apps---vpc-peering-pipeline

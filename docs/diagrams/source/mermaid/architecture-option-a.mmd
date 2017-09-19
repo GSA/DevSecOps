@@ -4,7 +4,7 @@ graph LR
   gsa-users(("GSA Network Users"))
   subgraph SecOps Maintained Services VPC
     vpc-router-secops["VPC Router"]
-    secops-elk["ELK"]
+    secops-log["SecOps logging stack"]
     secops-nessusmanager["Nessus Manager"]
   end
   subgraph AWS subaccount
@@ -47,7 +47,7 @@ graph LR
         end
         subgraph Private Subnet
           mgmt-jenkins["Jenkins"]
-          mgmt-elk["ELK"]
+          mgmt-log["Logging stack"]
           mgmt-monitoring["Metrics/Monitoring"]
         end
       end
@@ -74,7 +74,7 @@ graph LR
 
   mgmt-nat--SecurityGroup---mgmt-rds
   mgmt-nat--SecurityGroup---mgmt-jenkins
-  mgmt-nat--SecurityGroup---mgmt-elk
+  mgmt-nat--SecurityGroup---mgmt-log
   mgmt-nat--SecurityGroup---mgmt-monitoring
 
   gsa-users--SecurityGroup-->app-elb
