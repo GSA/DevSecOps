@@ -23,6 +23,7 @@ graph LR
     vpc-peering-secops["VPC Peering Connection - SecOps"]
     subgraph Application VPC
       subgraph Availability Zones us-east-1a/b
+      vpc-router-apps["VPC Router"]
         subgraph Public Subnet
           app-nat["NAT Gateway"]
           app-elb["Load Balancer"]
@@ -34,12 +35,11 @@ graph LR
           app-rds{"AWS RDS instances"}
         end
       end
-      vpc-router-apps["VPC Router"]
     end
     vpc-peering-pipeline["VPC Peering Connection - Internal"]
     subgraph Management VPC
-      vpc-router-mgmt["VPC Router"]
       subgraph Availability Zones us-east-1a/b
+      vpc-router-mgmt["VPC Router"]
         subgraph Public Subnet
           mgmt-nat["NAT Gateway"]
           mgmt-jumpbox["Jumpbox"]
