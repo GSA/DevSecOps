@@ -1,4 +1,5 @@
-# DevSecOps-Infrastructure
+# DevSecOps-Infrastructure [![CircleCI](https://circleci.com/gh/GSA/DevSecOps-Infrastructure.svg?style=svg)](https://circleci.com/gh/GSA/DevSecOps-Infrastructure)
+
 Base infrastructure for future DevSecOps environment in AWS
 
 This project implements the networking components for a base infrastructure in AWS. This is specifically in reference to the future DevSecOps implementation.
@@ -64,7 +65,7 @@ The code follows the [Don't Repeat Yourself (DRY)](https://en.wikipedia.org/wiki
 For initial or subsequent deployment, assuming you already executed the init above:
 
 1. Verify that terraform understands what it's going to do.
-    
+
     ```sh
     terraform plan
     ```
