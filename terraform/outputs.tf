@@ -53,3 +53,51 @@ output "mgmt_default_security_group_id" {
 output "private_mgmt_dns_zone_name" {
   value = "${aws_route53_zone.private-mgmt.name}"
 }
+
+output "app_vpc_name" {
+  value = "${var.app_vpc_name}"
+}
+
+output "app_vpc_id" {
+  value = "${module.app-vpc.vpc_id}"
+}
+
+output "app_vpc_cidr_block" {
+  value = "${module.app-vpc.vpc_cidr_block}"
+}
+
+output "app_public_subnet_ids" {
+  value = "${module.app-vpc.public_subnets}"
+}
+
+output "app_public_subnet_cidrs" {
+  value = "${var.app/_public_subnet_cidrs}"
+}
+
+output "app_private_subnet_ids" {
+  value = "${module.app-vpc.private_subnets}"
+}
+
+output "app_private_subnet_cidrs" {
+  value = "${var.app_private_subnet_cidrs}"
+}
+
+output "app_database_subnet_ids" {
+  value = "${module.app-vpc.database_subnets}"
+}
+
+output "app_database_subnet_cidrs" {
+  value = "${var.app_database_subnet_cidrs}"
+}
+
+output "app_database_subnet_group_name" {
+  value = "${module.app-vpc.database_subnet_group}"
+}
+
+output "app_default_security_group_id" {
+  value = "${module.app-vpc.default_security_group_id}"
+}
+
+output "public_app_dns_zone_name" {
+  value = "${aws_route53_zone.public-app.name}"
+}
