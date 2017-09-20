@@ -1,7 +1,10 @@
-%% title: Architecture Option A
-%% description: DevSecOps high level architecture Option A
+%% title: Architecture diagram
+%% description: DevSecOps high level architecture
 graph LR
   gsa-users(("GSA Network Users"))
+  subgraph External Dependencies
+    github["GitHub"]
+  end
   subgraph SecOps Maintained Services VPC
     vpc-router-secops["VPC Router"]
     secops-log["SecOps logging stack"]
@@ -14,9 +17,13 @@ graph LR
     aws-console["AWS Console"]
     aws-cli["AWS CLI"]
     s3["AWS S3"]
+    glacier["AWS Glacier"]
     kinesis["AWS Kinesis"]
     route53["AWS Route 53"]
     aws-sqs["AWS SQS"]
+    aws-sns["AWS SNS"]
+    aws-lambda["AWS Lambda"]
+    mgmt-lambda-custodian["Cloud Custodian"]
     cloudwatch["AWS CloudWatch Metrics"]
     cloudwatch-logs["AWS CloudWatch Logs"]
     cloudtrail["AWS CloudTrail"]
@@ -31,7 +38,7 @@ graph LR
         subgraph Private Subnet
           app-app["Application"]
         end
-        subgraph Private Subnet - Database
+        subgraph Private Subnets - Database
           app-rds{"AWS RDS instances"}
         end
       end
@@ -42,16 +49,17 @@ graph LR
       vpc-router-mgmt["VPC Router"]
         subgraph Public Subnet
           mgmt-nat["NAT Gateway"]
+          mgmt-elb["Load Balancer"]
           mgmt-jumpbox["Jumpbox"]
         end
-        subgraph Private Subnet - Database
+        subgraph Private Subnets - Database
           mgmt-rds{"AWS RDS instances"}
         end
         subgraph Private Subnet
           mgmt-jenkins["Jenkins"]
           mgmt-artifact-repository["Artifact Repository"]
-          mgmt-log["Logging stack"]
-          mgmt-monitoring["Metrics/Monitoring"]
+          mgmt-log["Log Data/Alerting"]
+          mgmt-monitoring["Metrics/Monitoring/Alerting"]
         end
       end
     end
@@ -63,6 +71,8 @@ graph LR
   aws-cli-."Authentication/Authorization".->iam
   iam-.->iam-perms
   iam-perms-.->iam-roles
+  mgmt-lambda-custodian-.->aws-lambda
+  s3-.->glacier
 
   vpc-router-secops---vpc-peering-secops
   vpc-router-mgmt---vpc-peering-pipeline
@@ -72,7 +82,7 @@ graph LR
   vpc-router-apps---vpc-peering-secops
   vpc-router-apps---app-nat
 
-  app-elb-->app-nat
+  app-elb--SecurityGroup-->app-app
   app-nat--SecurityGroup---app-app
   app-nat--SecurityGroup---app-rds
 
@@ -81,7 +91,12 @@ graph LR
   mgmt-nat--SecurityGroup---mgmt-artifact-repository
   mgmt-nat--SecurityGroup---mgmt-log
   mgmt-nat--SecurityGroup---mgmt-monitoring
+  mgmt-elb--Securitygroup-->mgmt-jenkins
 
   gsa-users--SecurityGroup-->app-elb
+  gsa-users--SecurityGroup-->mgmt-elb
+  gsa-users--SecurityGroup-->mgmt-jumpbox
+
+  mgmt-nat-->github
 
 
