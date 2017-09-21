@@ -71,7 +71,7 @@ output "app_public_subnet_ids" {
 }
 
 output "app_public_subnet_cidrs" {
-  value = "${var.app/_public_subnet_cidrs}"
+  value = "${var.app_public_subnet_cidrs}"
 }
 
 output "app_private_subnet_ids" {

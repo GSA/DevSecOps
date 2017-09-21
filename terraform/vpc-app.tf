@@ -1,7 +1,3 @@
-data "aws_region" "current" {
-  current = true
-}
-
 module "app-vpc" {
   source = "github.com/terraform-community-modules/tf_aws_vpc"
 
