@@ -10,4 +10,4 @@ jobs:
           command: cd terraform && terraform init -backend=false
       - run:
           name: Validate Terraform
-          command: cd terraform && terraform validate
+          command: cd terraform && terraform validate -check-variables=false
