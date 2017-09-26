@@ -19,3 +19,9 @@ module "mgmt-vpc" {
     "Repository" = "https://github.com/GSA/DevSecOps-Infrastructure"
   }
 }
+
+module "mgmt-vpc-flow-log" {
+  source = "modules/vpc_flow_log"
+  vpc_name = "${var.mgmt_vpc_name}"
+  vpc_id = "${module.mgmt-vpc.vpc_id}"
+}
