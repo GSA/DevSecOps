@@ -97,7 +97,3 @@ output "app_database_subnet_group_name" {
 output "app_default_security_group_id" {
   value = "${module.app-vpc.default_security_group_id}"
 }
-
-output "public_app_dns_zone_name" {
-  value = "${aws_route53_zone.public-app.name}"
-}
