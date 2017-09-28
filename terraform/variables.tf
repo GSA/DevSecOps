@@ -6,7 +6,6 @@ variable "aws_az2" {
   type = "string"
   description = "Must be a valid AWS availability zone"
 }
-
 variable "mgmt_vpc_name" {
   type = "string"
 }
@@ -22,7 +21,6 @@ variable "mgmt_private_subnet_cidrs" {
 variable "mgmt_database_subnet_cidrs" {
   default = ["10.0.101.0/24", "10.0.102.0/24"]
 }
-
 variable "mgmt_nat_gateway" {
   default = "true"
   description = "boolean, as a lower-case string"
@@ -38,7 +36,6 @@ variable "mgmt_dns_support" {
 variable "private_mgmt_zone_name" {
   type = "string"
 }
-
 variable "mgmt_flow_log_group_name" {
   default = "vpc_flow_logs"
   default = "vpc_mgmt_flow_logs"
@@ -70,9 +67,6 @@ variable "app_dns_hostnames" {
 variable "app_dns_support" {
   type = "string"
   default = "true"
-}
-variable "public_app_zone_name" {
-  type = "string"
 }
 variable "app_flow_log_group_name" {
   default = "vpc_app_flow_logs"
