@@ -11,15 +11,15 @@ output "mgmt_vpc_name" {
 }
 
 output "mgmt_vpc_id" {
-  value = "${module.mgmt-vpc.vpc_id}"
+  value = "${module.mgmt_vpc.vpc_id}"
 }
 
 output "mgmt_vpc_cidr_block" {
-  value = "${module.mgmt-vpc.vpc_cidr_block}"
+  value = "${module.mgmt_vpc.vpc_cidr_block}"
 }
 
 output "mgmt_public_subnet_ids" {
-  value = "${module.mgmt-vpc.public_subnets}"
+  value = "${module.mgmt_vpc.public_subnets}"
 }
 
 output "mgmt_public_subnet_cidrs" {
@@ -27,7 +27,7 @@ output "mgmt_public_subnet_cidrs" {
 }
 
 output "mgmt_private_subnet_ids" {
-  value = "${module.mgmt-vpc.private_subnets}"
+  value = "${module.mgmt_vpc.private_subnets}"
 }
 
 output "mgmt_private_subnet_cidrs" {
@@ -35,7 +35,7 @@ output "mgmt_private_subnet_cidrs" {
 }
 
 output "mgmt_database_subnet_ids" {
-  value = "${module.mgmt-vpc.database_subnets}"
+  value = "${module.mgmt_vpc.database_subnets}"
 }
 
 output "mgmt_database_subnet_cidrs" {
@@ -43,11 +43,11 @@ output "mgmt_database_subnet_cidrs" {
 }
 
 output "mgmt_database_subnet_group_name" {
-  value = "${module.mgmt-vpc.database_subnet_group}"
+  value = "${module.mgmt_vpc.database_subnet_group}"
 }
 
 output "mgmt_default_security_group_id" {
-  value = "${module.mgmt-vpc.default_security_group_id}"
+  value = "${module.mgmt_vpc.default_security_group_id}"
 }
 
 output "private_mgmt_dns_zone_name" {
