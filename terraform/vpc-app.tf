@@ -1,4 +1,4 @@
-module "app-vpc" {
+module "app_vpc" {
   source = "github.com/terraform-community-modules/tf_aws_vpc"
 
   name = "${var.app_vpc_name}"
@@ -20,8 +20,8 @@ module "app-vpc" {
   }
 }
 
-module "app-vpc-flow-log" {
+module "app_vpc_flow_log" {
   source = "modules/vpc_flow_log"
   vpc_name = "${var.app_vpc_name}"
-  vpc_id = "${module.app-vpc.vpc_id}"
+  vpc_id = "${module.app_vpc.vpc_id}"
 }

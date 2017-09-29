@@ -4,14 +4,12 @@ Base infrastructure for future DevSecOps environment in AWS
 
 This project implements the networking components for a base infrastructure in AWS. This is specifically in reference to the future DevSecOps implementation.
 
-Here, we'll use terraform to create 4 VPC's and the required subnets, starting with the management VPC.
+Here, we'll use terraform to create 2 VPC's and the required subnets.
 
-* vpc-prod
-* vpc-dev
-* vpc-test
 * vpc-mgmt
+* vpc-app
 
-As of 08/30/17, this set only creates the vpc-mgmt VPC.
+The VPCs are presented as modules. These modules can be used anywhere within your code to create a base VPC that follows the standard. The standard VPC will contain 4 subnets: 1 public, 1 private, 2 database subnets. Of course, you're encouraged to modify as per your own requirements. Consume the modules with terraform code and use the path designation as the source.
 
 ## Products In Use
 

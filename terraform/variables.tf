@@ -37,7 +37,6 @@ variable "private_mgmt_zone_name" {
   type = "string"
 }
 variable "mgmt_flow_log_group_name" {
-  default = "vpc_flow_logs"
   default = "vpc_mgmt_flow_logs"
   description = "log group name for the management VPC"
 }
