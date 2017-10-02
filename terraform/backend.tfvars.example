@@ -1,5 +1,8 @@
 # This will be used to init the backend during "terraform init" (see README.MD)
 # These values must match the bucket you created.
+# Bucket: S3 bucket name (must already exist)
+# Key: folder and filename that will be inside the bucket. This allows multiple terraform state files in the same S3 bucket.
+# Region: AWS region hosting the bucket.
 bucket = "<bucket-name>"  # e.g. "devsecops-infrastructure"
 key = "<folder/file>"     # e.g. "network/terraform.tfstate"
 region = "<region>"       # e.g. "us-east-1"
