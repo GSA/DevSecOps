@@ -1,5 +1,5 @@
 module "mgmt_vpc" {
-  source = "github.com/terraform-community-modules/tf_aws_vpc"
+  source = "github.com/terraform-aws-modules/terraform-aws-vpc"
 
   name = "${var.mgmt_vpc_name}"
 
