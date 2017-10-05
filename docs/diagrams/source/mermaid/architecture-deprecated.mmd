@@ -1,12 +1,15 @@
-%% title: Architecture diagram
-%% description: DevSecOps high level architecture, VPN tunnels to NetOps VPC
+%% title: Architecture diagram (DEPRECATED)
+%% description: DevSecOps high level architecture - DEPRECATED
 graph LR
   gsa-users(("GSA Network Users"))
-  public-internet(("Public Internet"))
-  github["GitHub"]
-  netops-aws-vpc["NetOps VPC"]
-  secops-aws-vpc["SecOps VPC"]
-  vpn-tunnels["VPN Tunnels"]
+  subgraph External Dependencies
+    github["GitHub"]
+  end
+  subgraph SecOps Maintained Services VPC
+    vpc-router-secops["VPC Router"]
+    secops-log["SecOps logging stack"]
+    secops-nessusmanager["Nessus Manager"]
+  end
   subgraph AWS subaccount
     iam["AWS IAM"]
     iam-perms["AWS IAM Permissions"]
@@ -24,32 +27,39 @@ graph LR
     cloudwatch["AWS CloudWatch Metrics"]
     cloudwatch-logs["AWS CloudWatch Logs"]
     cloudtrail["AWS CloudTrail"]
-    subgraph Customer VPC
+    vpc-peering-secops["VPC Peering Connection - SecOps"]
+    subgraph Application VPC
       subgraph Availability Zones us-east-1a/b
-          vpc-customer-router["VPC Router"]
-        subgraph Mgmt Private RDS Subnets
-          mgmt-rds{"AWS RDS instances"}
+      vpc-router-apps["VPC Router"]
+        subgraph Public Subnet
+          app-nat["NAT Gateway"]
+          app-elb["Load Balancer"]
         end
-        subgraph Management Public Subnet
+        subgraph Private Subnet
+          app-app["Application"]
+        end
+        subgraph Private Subnets - Database
+          app-rds{"AWS RDS instances"}
+        end
+      end
+    end
+    vpc-peering-pipeline["VPC Peering Connection - Internal"]
+    subgraph Management VPC
+      subgraph Availability Zones us-east-1a/b
+      vpc-router-mgmt["VPC Router"]
+        subgraph Public Subnet
           mgmt-nat["NAT Gateway"]
           mgmt-elb["Load Balancer"]
           mgmt-jumpbox["Jumpbox"]
         end
-        subgraph Management Private Subnet
+        subgraph Private Subnets - Database
+          mgmt-rds{"AWS RDS instances"}
+        end
+        subgraph Private Subnet
           mgmt-jenkins["Jenkins"]
           mgmt-artifact-repository["Artifact Repository"]
           mgmt-log["Log Data/Alerting"]
           mgmt-monitoring["Metrics/Monitoring/Alerting"]
-        end
-        subgraph App Public Subnet
-          app-nat["NAT Gateway"]
-          app-elb["Load Balancer"]
-        end
-        subgraph App Private Subnet
-          app-app["Application"]
-        end
-        subgraph App Private RDS Subnets
-          app-rds{"AWS RDS instances"}
         end
       end
     end
@@ -64,19 +74,13 @@ graph LR
   mgmt-lambda-custodian-.->aws-lambda
   s3-.->glacier
 
-  github---public-internet
-  gsa-users---netops-aws-vpc
-  public-internet---netops-aws-vpc
-  secops-aws-vpc---netops-aws-vpc
-  netops-aws-vpc---vpn-tunnels
-
-  vpn-tunnels---vpc-customer-router
-
-  vpc-customer-router--SecurityGroup---app-elb
-  vpc-customer-router--SecurityGroup---mgmt-elb
-  vpc-customer-router--SecurityGroup---mgmt-jumpbox
-  vpc-customer-router---app-nat
-  vpc-customer-router---mgmt-nat
+  vpc-router-secops---vpc-peering-secops
+  vpc-router-mgmt---vpc-peering-pipeline
+  vpc-router-mgmt---vpc-peering-secops
+  vpc-router-mgmt---mgmt-nat
+  vpc-router-apps---vpc-peering-pipeline
+  vpc-router-apps---vpc-peering-secops
+  vpc-router-apps---app-nat
 
   app-elb--SecurityGroup-->app-app
   app-nat--SecurityGroup---app-app
@@ -88,3 +92,11 @@ graph LR
   mgmt-nat--SecurityGroup---mgmt-log
   mgmt-nat--SecurityGroup---mgmt-monitoring
   mgmt-elb--Securitygroup-->mgmt-jenkins
+
+  gsa-users--SecurityGroup-->app-elb
+  gsa-users--SecurityGroup-->mgmt-elb
+  gsa-users--SecurityGroup-->mgmt-jumpbox
+
+  mgmt-nat-->github
+
+
