@@ -1,0 +1,30 @@
+%% title: Architecture-Customer Accounts
+%% description: DevSecOps Customer Accounts - 1 Account == 1 VPC
+graph LR
+  gsa-users(("GSA Network Users"))
+  public-internet(("Public Internet"))
+  github["GitHub"]
+  netops-aws-vpc["NetOps VPC"]
+  secops-aws-vpc["SecOps VPC"]
+  vpn-tunnel-dev["VPN Tunnel to Dev"]
+  vpn-tunnel-test["VPN Tunnel to Test"]
+  vpn-tunnel-prod["VPN Tunnel to Prod"]
+  vpn-tunnel-management["VPN Tunnel to Management"]
+  aws-subaccount-dev["AWS Subaccount-Dev"]
+  aws-subaccount-test["AWS Subaccount-Test"]
+  aws-subaccount-prod["AWS Subaccount-Prod"]
+  aws-subaccount-management["AWS Subaccount-Management"]
+
+  github---public-internet
+  gsa-users---netops-aws-vpc
+  public-internet---netops-aws-vpc
+  secops-aws-vpc---netops-aws-vpc
+  netops-aws-vpc---vpn-tunnel-dev
+  netops-aws-vpc---vpn-tunnel-test
+  netops-aws-vpc---vpn-tunnel-prod
+  netops-aws-vpc---vpn-tunnel-management
+
+  vpn-tunnel-dev---aws-subaccount-dev
+  vpn-tunnel-test---aws-subaccount-test
+  vpn-tunnel-prod---aws-subaccount-prod
+  vpn-tunnel-management---aws-subaccount-management

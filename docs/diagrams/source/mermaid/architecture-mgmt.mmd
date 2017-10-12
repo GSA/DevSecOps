@@ -1,0 +1,74 @@
+%% title: Architecture-Management
+%% description: DevSecOps Mgmt - 1 AWS account == 1 VPC
+graph LR
+  gsa-users(("GSA Network Users"))
+  public-internet(("Public Internet"))
+  github["GitHub"]
+  netops-aws-vpc["NetOps VPC"]
+  secops-aws-vpc["SecOps VPC"]
+  vpn-tunnels["VPN Tunnels"]
+  subgraph AWS subaccount
+    iam["AWS IAM"]
+    iam-perms["AWS IAM Permissions"]
+    iam-roles["AWS IAM Roles"]
+    aws-console["AWS Console"]
+    aws-cli["AWS CLI"]
+    s3["AWS S3"]
+    glacier["AWS Glacier"]
+    kinesis["AWS Kinesis"]
+    route53["AWS Route 53"]
+    aws-sqs["AWS SQS"]
+    aws-sns["AWS SNS"]
+    aws-lambda["AWS Lambda"]
+    mgmt-lambda-custodian["Cloud Custodian"]
+    cloudwatch["AWS CloudWatch Metrics"]
+    cloudwatch-logs["AWS CloudWatch Logs"]
+    cloudtrail["AWS CloudTrail"]
+    subgraph Customer VPC-Management
+      subgraph Availability Zones us-east-1a/b
+          vpc-customer-router["VPC Router"]
+        subgraph Mgmt Private RDS Subnets
+          mgmt-rds{"AWS RDS instances"}
+        end
+        subgraph Management Public Subnet
+          mgmt-nat["NAT Gateway"]
+          mgmt-elb["Load Balancer"]
+          mgmt-jumpbox["Jumpbox"]
+        end
+        subgraph Management Private Subnet
+          mgmt-jenkins["Jenkins"]
+          mgmt-artifact-repository["Artifact Repository"]
+          mgmt-log["Log Data/Alerting"]
+          mgmt-monitoring["Metrics/Monitoring/Alerting"]
+        end
+      end
+    end
+  end
+
+  cloudwatch-logs-- Encrypted log data only --- kinesis
+
+  aws-console-."Authentication/Authorization".->iam
+  aws-cli-."Authentication/Authorization".->iam
+  iam-.->iam-perms
+  iam-perms-.->iam-roles
+  mgmt-lambda-custodian-.->aws-lambda
+  s3-.->glacier
+
+  github---public-internet
+  gsa-users---netops-aws-vpc
+  public-internet---netops-aws-vpc
+  secops-aws-vpc---netops-aws-vpc
+  netops-aws-vpc---vpn-tunnels
+
+  vpn-tunnels---vpc-customer-router
+
+  vpc-customer-router--SecurityGroup---mgmt-elb
+  vpc-customer-router--SecurityGroup---mgmt-jumpbox
+  vpc-customer-router---mgmt-nat
+
+  mgmt-nat--SecurityGroup---mgmt-rds
+  mgmt-nat--SecurityGroup---mgmt-jenkins
+  mgmt-nat--SecurityGroup---mgmt-artifact-repository
+  mgmt-nat--SecurityGroup---mgmt-log
+  mgmt-nat--SecurityGroup---mgmt-monitoring
+  mgmt-elb--Securitygroup-->mgmt-jenkins
