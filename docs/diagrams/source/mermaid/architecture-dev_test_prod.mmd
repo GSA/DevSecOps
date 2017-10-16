@@ -6,7 +6,8 @@ graph LR
   github["GitHub"]
   netops-aws-vpc["NetOps VPC"]
   secops-aws-vpc["SecOps VPC"]
-  vpn-tunnels["VPN Tunnels"]
+  vpn-tunnel1["VPN Tunnel 1"]
+  vpn-tunnel2["VPN Tunnel 2"]
   subgraph AWS subaccount
     iam["AWS IAM"]
     iam-perms["AWS IAM Permissions"]
@@ -25,17 +26,32 @@ graph LR
     cloudwatch-logs["AWS CloudWatch Logs"]
     cloudtrail["AWS CloudTrail"]
     subgraph Customer VPC-Dev, Test or Prod
-      subgraph Availability Zones us-east-1a/b
-          vpc-customer-router["VPC Router"]
+      subgraph Availability Zone-Primary
+          vpc-vgw1["VPC VGW1"]
+          vpc-vgw2["VPC VGW2"]
         subgraph App Public Subnet
           app-nat["NAT Gateway"]
-          app-elb["Load Balancer"]
+          app-alb["App Load Balancer"]
         end
         subgraph App Private Subnet
           app-app["Application"]
         end
         subgraph App Private RDS Subnets
           app-rds{"AWS RDS instances"}
+        end
+      end
+      subgraph Availability Zone-Failover
+          vpc-vgw1-standby["VPC VGW1 Standby"]
+          vpc-vgw2=standby["VPC VGW2 Standby"]
+        subgraph App Public Subnet
+          app-nat-standby["NAT Gateway-Standby"]
+          app-alb-standby["App Load Balancer-Standby"]
+        end
+        subgraph App Private Subnet
+          app-app-standby["Application-Standby"]
+        end
+        subgraph App Private RDS Subnets
+          app-rds-standby{"AWS RDS-Read Replicas"}
         end
       end
     end
@@ -54,13 +70,20 @@ graph LR
   gsa-users---netops-aws-vpc
   public-internet---netops-aws-vpc
   secops-aws-vpc---netops-aws-vpc
-  netops-aws-vpc---vpn-tunnels
+  netops-aws-vpc---vpn-tunnel1
+  netops-aws-vpc---vpn-tunnel2
 
-  vpn-tunnels---vpc-customer-router
+  vpn-tunnel1---vpc-vgw1
+  vpn-tunnel2---vpc-vgw2
 
-  vpc-customer-router--SecurityGroup---app-elb
-  vpc-customer-router---app-nat
+  vpc-vgw1--SecurityGroup---app-alb
+  vpc-vgw1---app-nat
 
-  app-elb--SecurityGroup-->app-app
+  vpc-vgw2--SecurityGroup---app-alb
+  vpc-vgw2---app-nat
+
+  app-alb--SecurityGroup-->app-app
   app-nat--SecurityGroup---app-app
   app-nat--SecurityGroup---app-rds
+
+  app-rds---app-rds-standby

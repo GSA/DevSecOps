@@ -6,7 +6,8 @@ graph LR
   github["GitHub"]
   netops-aws-vpc["NetOps VPC"]
   secops-aws-vpc["SecOps VPC"]
-  vpn-tunnels["VPN Tunnels"]
+  vpn-tunnel1["VPN Tunnel 1"]
+  vpn-tunnel2["VPN Tunnel 2"]
   subgraph AWS subaccount
     iam["AWS IAM"]
     iam-perms["AWS IAM Permissions"]
@@ -25,14 +26,15 @@ graph LR
     cloudwatch-logs["AWS CloudWatch Logs"]
     cloudtrail["AWS CloudTrail"]
     subgraph Customer VPC-Management
-      subgraph Availability Zones us-east-1a/b
-          vpc-customer-router["VPC Router"]
+      subgraph Availability Zone-Primary
+          vpc-vgw1["VPC VGW1"]
+          vpc-vgw2["VPC VGW2"]
         subgraph Mgmt Private RDS Subnets
           mgmt-rds{"AWS RDS instances"}
         end
         subgraph Management Public Subnet
           mgmt-nat["NAT Gateway"]
-          mgmt-elb["Load Balancer"]
+          mgmt-alb["App Load Balancer"]
           mgmt-jumpbox["Jumpbox"]
         end
         subgraph Management Private Subnet
@@ -40,6 +42,24 @@ graph LR
           mgmt-artifact-repository["Artifact Repository"]
           mgmt-log["Log Data/Alerting"]
           mgmt-monitoring["Metrics/Monitoring/Alerting"]
+        end
+      end
+      subgraph Availability Zone-Failover
+          vpc-vgw1-standby["VPC VGW1"]
+          vpc-vgw2-standby["VPC VGW2"]
+        subgraph Mgmt Private RDS Subnets
+          mgmt-rds-standby{"AWS RDS-Standby"}
+        end
+        subgraph Management Public Subnet
+          mgmt-nat-standby["NAT Gateway-Standby"]
+          mgmt-alb-standby["App Load Balancer-Standby"]
+          mgmt-jumpbox-standby["Jumpbox-Standby"]
+        end
+        subgraph Management Private Subnet
+          mgmt-jenkins-standby["Jenkins-Standby"]
+          mgmt-artifact-repository-standby["Artifact Repo-Standby"]
+          mgmt-log-standby["Log Data/Alerting-Standby"]
+          mgmt-monitoring-standby["Metrics/Monitoring/Alerting=Standby"]
         end
       end
     end
@@ -58,17 +78,25 @@ graph LR
   gsa-users---netops-aws-vpc
   public-internet---netops-aws-vpc
   secops-aws-vpc---netops-aws-vpc
-  netops-aws-vpc---vpn-tunnels
+  netops-aws-vpc---vpn-tunnel1
+  netops-aws-vpc---vpn-tunnel2
 
-  vpn-tunnels---vpc-customer-router
+  vpn-tunnel1---vpc-vgw1
+  vpn-tunnel2---vpc-vgw2
 
-  vpc-customer-router--SecurityGroup---mgmt-elb
-  vpc-customer-router--SecurityGroup---mgmt-jumpbox
-  vpc-customer-router---mgmt-nat
+  vpc-vgw1--SecurityGroup---mgmt-alb
+  vpc-vgw1--SecurityGroup---mgmt-jumpbox
+  vpc-vgw1---mgmt-nat
+
+  vpc-vgw2--SecurityGroup---mgmt-alb
+  vpc-vgw2--SecurityGroup---mgmt-jumpbox
+  vpc-vgw2---mgmt-nat
 
   mgmt-nat--SecurityGroup---mgmt-rds
   mgmt-nat--SecurityGroup---mgmt-jenkins
   mgmt-nat--SecurityGroup---mgmt-artifact-repository
   mgmt-nat--SecurityGroup---mgmt-log
   mgmt-nat--SecurityGroup---mgmt-monitoring
-  mgmt-elb--Securitygroup-->mgmt-jenkins
+  mgmt-alb--Securitygroup-->mgmt-jenkins
+
+  mgmt-rds---mgmt-rds-standby
