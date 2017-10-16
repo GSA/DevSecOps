@@ -1,5 +1,5 @@
-%% title: Architecture-Dev/Test/Prod
-%% description: DevSecOps Dev/Test/Prod - 1 AWS account == 1 VPC
+%% title: Architecture-Dev/Test
+%% description: DevSecOps Dev/Test - 1 AWS account == 1 VPC
 graph LR
   gsa-users(("GSA Network Users"))
   public-internet(("Public Internet"))
@@ -40,20 +40,6 @@ graph LR
           app-rds{"AWS RDS instances"}
         end
       end
-      subgraph Availability Zone-Failover
-          vpc-vgw1-standby["VPC VGW1 Standby"]
-          vpc-vgw2=standby["VPC VGW2 Standby"]
-        subgraph App Public Subnet
-          app-nat-standby["NAT Gateway-Standby"]
-          app-alb-standby["App Load Balancer-Standby"]
-        end
-        subgraph App Private Subnet
-          app-app-standby["Application-Standby"]
-        end
-        subgraph App Private RDS Subnets
-          app-rds-standby{"AWS RDS-Read Replicas"}
-        end
-      end
     end
   end
 
@@ -85,5 +71,3 @@ graph LR
   app-alb--SecurityGroup-->app-app
   app-nat--SecurityGroup---app-app
   app-nat--SecurityGroup---app-rds
-
-  app-rds---app-rds-standby

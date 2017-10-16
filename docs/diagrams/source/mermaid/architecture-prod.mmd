@@ -1,5 +1,5 @@
-%% title: Architecture-Management
-%% description: DevSecOps Mgmt - 1 AWS account == 1 VPC
+%% title: Architecture-Prod
+%% description: DevSecOps Prod - 1 AWS account == 1 VPC
 graph LR
   gsa-users(("GSA Network Users"))
   public-internet(("Public Internet"))
@@ -25,23 +25,33 @@ graph LR
     cloudwatch["AWS CloudWatch Metrics"]
     cloudwatch-logs["AWS CloudWatch Logs"]
     cloudtrail["AWS CloudTrail"]
-    subgraph Customer VPC-Management
+    subgraph Customer VPC-Dev, Test or Prod
       subgraph Availability Zone-Primary
           vpc-vgw1["VPC VGW1"]
           vpc-vgw2["VPC VGW2"]
-        subgraph Mgmt Private RDS Subnets
-          mgmt-rds{"AWS RDS instances"}
+        subgraph App Public Subnet
+          app-nat["NAT Gateway"]
+          app-alb["App Load Balancer"]
         end
-        subgraph Management Public Subnet
-          mgmt-nat["NAT Gateway"]
-          mgmt-alb["App Load Balancer"]
-          mgmt-jumpbox["Jumpbox"]
+        subgraph App Private Subnet
+          app-app["Application"]
         end
-        subgraph Management Private Subnet
-          mgmt-jenkins["Jenkins"]
-          mgmt-artifact-repository["Artifact Repository"]
-          mgmt-log["Log Data/Alerting"]
-          mgmt-monitoring["Metrics/Monitoring/Alerting"]
+        subgraph App Private RDS Subnets
+          app-rds{"AWS RDS instances"}
+        end
+      end
+      subgraph Availability Zone-Failover
+          vpc-vgw1-standby["VPC VGW1 Standby"]
+          vpc-vgw2=standby["VPC VGW2 Standby"]
+        subgraph App Public Subnet
+          app-nat-standby["NAT Gateway-Standby"]
+          app-alb-standby["App Load Balancer-Standby"]
+        end
+        subgraph App Private Subnet
+          app-app-standby["Application-Standby"]
+        end
+        subgraph App Private RDS Subnets
+          app-rds-standby{"AWS RDS-Read Replicas"}
         end
       end
     end
@@ -66,17 +76,14 @@ graph LR
   vpn-tunnel1---vpc-vgw1
   vpn-tunnel2---vpc-vgw2
 
-  vpc-vgw1--SecurityGroup---mgmt-alb
-  vpc-vgw1--SecurityGroup---mgmt-jumpbox
-  vpc-vgw1---mgmt-nat
+  vpc-vgw1--SecurityGroup---app-alb
+  vpc-vgw1---app-nat
 
-  vpc-vgw2--SecurityGroup---mgmt-alb
-  vpc-vgw2--SecurityGroup---mgmt-jumpbox
-  vpc-vgw2---mgmt-nat
+  vpc-vgw2--SecurityGroup---app-alb
+  vpc-vgw2---app-nat
 
-  mgmt-nat--SecurityGroup---mgmt-rds
-  mgmt-nat--SecurityGroup---mgmt-jenkins
-  mgmt-nat--SecurityGroup---mgmt-artifact-repository
-  mgmt-nat--SecurityGroup---mgmt-log
-  mgmt-nat--SecurityGroup---mgmt-monitoring
-  mgmt-alb--Securitygroup-->mgmt-jenkins
+  app-alb--SecurityGroup-->app-app
+  app-nat--SecurityGroup---app-app
+  app-nat--SecurityGroup---app-rds
+
+  app-rds---app-rds-standby
