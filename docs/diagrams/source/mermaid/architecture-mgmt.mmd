@@ -1,12 +1,13 @@
-%% title: Architecture diagram
-%% description: DevSecOps high level architecture, VPN tunnels to NetOps VPC
+%% title: Architecture-Management
+%% description: DevSecOps Mgmt - 1 AWS account == 1 VPC
 graph LR
   gsa-users(("GSA Network Users"))
   public-internet(("Public Internet"))
   github["GitHub"]
   netops-aws-vpc["NetOps VPC"]
   secops-aws-vpc["SecOps VPC"]
-  vpn-tunnels["VPN Tunnels"]
+  vpn-tunnel1["VPN Tunnel 1"]
+  vpn-tunnel2["VPN Tunnel 2"]
   subgraph AWS subaccount
     iam["AWS IAM"]
     iam-perms["AWS IAM Permissions"]
@@ -24,15 +25,16 @@ graph LR
     cloudwatch["AWS CloudWatch Metrics"]
     cloudwatch-logs["AWS CloudWatch Logs"]
     cloudtrail["AWS CloudTrail"]
-    subgraph Customer VPC
-      subgraph Availability Zones us-east-1a/b
-          vpc-customer-router["VPC Router"]
+    subgraph Customer VPC-Management
+      subgraph Availability Zone-Primary
+          vpc-vgw1["VPC VGW1"]
+          vpc-vgw2["VPC VGW2"]
         subgraph Mgmt Private RDS Subnets
           mgmt-rds{"AWS RDS instances"}
         end
         subgraph Management Public Subnet
           mgmt-nat["NAT Gateway"]
-          mgmt-elb["Load Balancer"]
+          mgmt-alb["App Load Balancer"]
           mgmt-jumpbox["Jumpbox"]
         end
         subgraph Management Private Subnet
@@ -40,16 +42,6 @@ graph LR
           mgmt-artifact-repository["Artifact Repository"]
           mgmt-log["Log Data/Alerting"]
           mgmt-monitoring["Metrics/Monitoring/Alerting"]
-        end
-        subgraph App Public Subnet
-          app-nat["NAT Gateway"]
-          app-elb["Load Balancer"]
-        end
-        subgraph App Private Subnet
-          app-app["Application"]
-        end
-        subgraph App Private RDS Subnets
-          app-rds{"AWS RDS instances"}
         end
       end
     end
@@ -68,23 +60,23 @@ graph LR
   gsa-users---netops-aws-vpc
   public-internet---netops-aws-vpc
   secops-aws-vpc---netops-aws-vpc
-  netops-aws-vpc---vpn-tunnels
+  netops-aws-vpc---vpn-tunnel1
+  netops-aws-vpc---vpn-tunnel2
 
-  vpn-tunnels---vpc-customer-router
+  vpn-tunnel1---vpc-vgw1
+  vpn-tunnel2---vpc-vgw2
 
-  vpc-customer-router--SecurityGroup---app-elb
-  vpc-customer-router--SecurityGroup---mgmt-elb
-  vpc-customer-router--SecurityGroup---mgmt-jumpbox
-  vpc-customer-router---app-nat
-  vpc-customer-router---mgmt-nat
+  vpc-vgw1--SecurityGroup---mgmt-alb
+  vpc-vgw1--SecurityGroup---mgmt-jumpbox
+  vpc-vgw1---mgmt-nat
 
-  app-elb--SecurityGroup-->app-app
-  app-nat--SecurityGroup---app-app
-  app-nat--SecurityGroup---app-rds
+  vpc-vgw2--SecurityGroup---mgmt-alb
+  vpc-vgw2--SecurityGroup---mgmt-jumpbox
+  vpc-vgw2---mgmt-nat
 
   mgmt-nat--SecurityGroup---mgmt-rds
   mgmt-nat--SecurityGroup---mgmt-jenkins
   mgmt-nat--SecurityGroup---mgmt-artifact-repository
   mgmt-nat--SecurityGroup---mgmt-log
   mgmt-nat--SecurityGroup---mgmt-monitoring
-  mgmt-elb--Securitygroup-->mgmt-jenkins
+  mgmt-alb--Securitygroup-->mgmt-jenkins
