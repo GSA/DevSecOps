@@ -6,14 +6,14 @@ variable "aws_az2" {
   type = "string"
   description = "Must be a valid AWS availability zone"
 }
-variable "region" {
-  default = "us-east-1"
-}
 variable "private_vpc_zone_name" {
   type = "string"
 }
 variable "vpc_name" {
   type = "string"
+}
+variable "region" {
+  default = "us-east-1"
 }
 variable "vpc_cidr" {
   default = "10.1.0.0/16"
