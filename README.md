@@ -1,15 +1,22 @@
-# DevSecOps-Infrastructure [![CircleCI](https://circleci.com/gh/GSA/DevSecOps-Infrastructure.svg?style=svg)](https://circleci.com/gh/GSA/DevSecOps-Infrastructure)
+# GSA DevSecOps [![CircleCI](https://circleci.com/gh/GSA/DevSecOps-Infrastructure.svg?style=svg)](https://circleci.com/gh/GSA/DevSecOps)
 
-Base infrastructure for future DevSecOps environment in AWS
+Terraform modules for GSA DevSecOps
 
-This project implements the networking components for a base infrastructure in AWS. This is specifically in reference to the future DevSecOps implementation.
+This repo contains modules that can be reused as part of a DevSecOps implementation. Users are strongly encouraged to review the drawings in the /docs/diagrams directory.
 
-Here, we'll use terraform to create 2 VPC's and the required subnets.
+DevSecOps at GSA implements 1 AWS subaccount per VPC, per environment, per app:
 
-* vpc-mgmt
-* vpc-app
+1-1-1-1:
+1 AWS account == 1 Environment == 1 VPC == 1 application
 
-The VPCs are presented as modules. These modules can be used anywhere within your code to create a base VPC that follows the standard. The standard VPC will contain 4 subnets: 1 public, 1 private, 2 database subnets. Of course, you're encouraged to modify as per your own requirements. Consume the modules with terraform code and use the path designation as the source.
+The recommended components are in the /modules directory.
+
+You may wish to consult the following example repos for ideas or templates to deploy these modules:
+
+* [GSA/devsecops-example-pipeline](https://github.com/GSA/devsecops-example-pipeline)
+* [GSA/devsecops-example-prod](https://github.com/GSA/devsecops-example-prod)
+* [GSA/devsecops-example-dev](https://github.com/GSA/devsecops-example-dev)
+* [GSA/devsecops-example-test](https://github.com/GSA/devsecops-example-test)
 
 ## Products In Use
 
@@ -25,50 +32,39 @@ All configuration is code, and [all setup steps are documented](#setup). New env
 
 The code follows the [Don't Repeat Yourself (DRY)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) principle. Values that need to be shared are passed around as variables, rather than being hard-coded in multiple places. This ensures configuration stays in sync.
 
-## Setup
+## Using the Modules
 
-1. Set up the AWS CLI on the workstation that will be used to deploy the code.
-    1. [Install](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
-    1. [Configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
-1. Install additional dependencies:
-    * [Terraform](https://www.terraform.io/)
-1. Set up the Terraform backend.
+Using the modules is as easy as declaring them in your code, along with a pointer to the proper location. For example, the following terraform code will declare a VPC flow log using the module presented here.
 
-    ```sh
-    aws s3api create-bucket --bucket devsecops-infrastructure
-    aws s3api put-bucket-versioning --bucket devsecops-infrastructure --versioning-configuration Status=Enabled
-    ```
-    NOTE: You will need to replace your bucket name with something unique, because bucket names must be unique per-region. If you get an error that the bucket name is not available, then your choice was not unique. Remember this bucket name, you'll need it later.
+    ````sh
+    module "vpc_flow_log" {
+    source = "github.com/GSA/DevSecOps//terraform//modules//vpc_flow_log"
+    vpc_name = "${var.vpc_name}"
+    vpc_id = "${module.mgmt_vpc.vpc_id}"
+    }
+    ````
 
-1. Create the Terraform variables file.
+You must consult the documentation of the individual modules to verify that you are using the proper variables for each.
 
-    ```sh
-    cd terraform
-    cp terraform.tfvars.example terraform.tfvars
-    cp backend.tfvars.example backend.tfvars
-    ```
+## Modules Provided
 
-1. Fill out [`terraform.tfvars`](terraform/terraform.tfvars.example). Mind the variable types and follow the noted rules.
-1. Fill out ['backend.tfvars'](terraform/backend.tfvars.example). The "bucket" parameter *must* match the bucket name you used in the AWS CLI command above, otherwise terraform will throw an error on the init command.
-1. Set up environment using Terraform.
+This repo provides 3 modules:
 
-    ```sh
-    terraform init -backend-config="backend.tfvars"
-    ```
+* VPC
+* IAM Role Policy
+* VPC Flow Logs
 
-1. Run the [deployment](#deployment) steps below.
+### VPC Variables
 
-## Deployment
+This module requires a number of variables. Consult the [file](https://github.com/GSA/DevSecOps/blob/master/terraform/modules/vpc/variables.tf) for a list. Most of them provide defaults. The others require input. If a default for a variable is not given, it must be defined.
 
-For initial or subsequent deployment, assuming you already executed the init above:
+### CloudWatch IAM Role Policy Variables
 
-1. Verify that terraform understands what it's going to do.
+This module requires one variable: policy_name (as string)
 
-    ```sh
-    terraform plan
-    ```
-1. If everything looks fine, deploy up environment using Terraform.
+### VPC Flow Log Variables
 
-    ```sh
-    terraform apply
-    ```
+This module requires two variables:
+
+* vpc_id (string)
+* vpc_name (string)
