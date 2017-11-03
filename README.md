@@ -1,4 +1,4 @@
-# GSA DevSecOps [![CircleCI](https://circleci.com/gh/GSA/DevSecOps-Infrastructure.svg?style=svg)](https://circleci.com/gh/GSA/DevSecOps)
+# GSA DevSecOps [![CircleCI](https://circleci.com/gh/GSA/DevSecOps.svg?style=svg)](https://circleci.com/gh/GSA/DevSecOps)
 
 Terraform modules for GSA DevSecOps
 
