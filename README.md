@@ -1,4 +1,4 @@
-# GSA DevSecOps [![CircleCI](https://circleci.com/gh/GSA/DevSecOps-Infrastructure.svg?style=svg)](https://circleci.com/gh/GSA/DevSecOps)
+# GSA DevSecOps [![CircleCI](https://circleci.com/gh/GSA/DevSecOps.svg?style=svg)](https://circleci.com/gh/GSA/DevSecOps)
 
 Terraform modules for GSA DevSecOps
 
@@ -26,13 +26,13 @@ You may wish to consult the following example repos for ideas or templates to de
 
 Using the modules is as easy as declaring them in your code, along with a pointer to the proper location. For example, the following terraform code will declare a VPC flow log using the module presented here.
 
-    ````sh
-    module "vpc_flow_log" {
-    source = "github.com/GSA/DevSecOps//terraform//modules//vpc_flow_log"
-    vpc_name = "${var.vpc_name}"
-    vpc_id = "${module.mgmt_vpc.vpc_id}"
-    }
-    ````
+```hcl
+module "vpc_flow_log" {
+  source = "github.com/GSA/DevSecOps//terraform//modules//vpc_flow_log"
+  vpc_name = "${var.vpc_name}"
+  vpc_id = "${module.mgmt_vpc.vpc_id}"
+}
+```
 
 You must consult the documentation of the individual modules to verify that you are using the proper variables for each.
 
