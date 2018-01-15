@@ -1,3 +1,0 @@
-[submodule "terraform/modules/vpc"]
-	path = terraform/modules/vpc
-	url = https://github.com/GSA/terraform-aws-vpc
