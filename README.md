@@ -14,6 +14,7 @@ GRACE implements 1 AWS subaccount per VPC, per environment, per app:
 
 You may wish to consult the following example repos for ideas or templates to implement GRACE.
 
+* [GSA/grace-core](https://github.com/GSA/grace-core)
 * [GSA/devsecops-example](https://github.com/GSA/devsecops-example)
 * [GSA/security-benchmarks](https://github.com/GSA/security-benchmarks)
 * [GSA/devsecops-cloud-custodian-rules](https://github.com/GSA/devsecops-cloud-custodian-rules)
