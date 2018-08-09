@@ -26,3 +26,5 @@ You may wish to consult the following example repos for ideas or templates to im
 * [GSA/devsecops-ebs-backup](https://github.com/GSA/devsecops-ebs-backup)
 * [GSA/devsecops-subaccount-admin](https://github.com/GSA/devsecops-subaccount-admin)
 * [GSA/aws-account-broker](https://github.com/GSA/aws-account-broker)
+* [GSA/grace-rhel-ami](https://github.com/GSA/grace-rhel-ami)
+* [GSA/grace-ubuntu-ami](https://github.com/GSA/grace-ubuntu/ami)
