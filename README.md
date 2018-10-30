@@ -28,3 +28,4 @@ You may wish to consult the following example repos for ideas or templates to im
 * [GSA/aws-account-broker](https://github.com/GSA/aws-account-broker)
 * [GSA/grace-rhel-ami](https://github.com/GSA/grace-rhel-ami)
 * [GSA/grace-ubuntu-ami](https://github.com/GSA/grace-ubuntu/ami)
+* [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda)
