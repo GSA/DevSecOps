@@ -18,7 +18,7 @@ You may wish to consult the following example repos for ideas or templates to im
 * [GSA/grace-example](https://github.com/GSA/grace-example)
 * [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda)
 * [GSA/grace-rhel-ami](https://github.com/GSA/grace-rhel-ami)
-* [GSA/grace-ubuntu-ami](https://github.com/GSA/grace-ubuntu/ami)
+* [GSA/grace-ubuntu-ami](https://github.com/GSA/grace-ubuntu-ami)
 * [GSA/security-benchmarks](https://github.com/GSA/security-benchmarks)
 
 ### Terraform Modules ###
