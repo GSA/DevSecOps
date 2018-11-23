@@ -14,17 +14,33 @@ GRACE implements 1 AWS subaccount per VPC, per environment, per app:
 
 You may wish to consult the following example repos for ideas or templates to implement GRACE.
 
-* [GSA/grace-core](https://github.com/GSA/grace-core)
-* [GSA/devsecops-example](https://github.com/GSA/devsecops-example)
-* [GSA/security-benchmarks](https://github.com/GSA/security-benchmarks)
-* [GSA/devsecops-cloud-custodian-rules](https://github.com/GSA/devsecops-cloud-custodian-rules)
-* [GSA/devsecops-tenant-networking](https://github.com/GSA/devsecops-tenant-networking)
-* [GSA/devsecops-log-forwarding](https://github.com/GSA/devsecops-log-forwarding)
-* [GSA/devsecops-ekk-stack](https://github.com/GSA/devsecops-ekk-stack)
-* [GSA/ansible-fluentd](https://github.com/GSA/ansible-fluentd)
-* [GSA/devsecops-iam-roles](https://github.com/GSA/devsecops-iam-roles)
-* [GSA/devsecops-ebs-backup](https://github.com/GSA/devsecops-ebs-backup)
-* [GSA/devsecops-subaccount-admin](https://github.com/GSA/devsecops-subaccount-admin)
-* [GSA/aws-account-broker](https://github.com/GSA/aws-account-broker)
+## Public ##
+* [GSA/grace-example](https://github.com/GSA/grace-example)
+* [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda)
 * [GSA/grace-rhel-ami](https://github.com/GSA/grace-rhel-ami)
 * [GSA/grace-ubuntu-ami](https://github.com/GSA/grace-ubuntu/ami)
+* [GSA/security-benchmarks](https://github.com/GSA/security-benchmarks)
+
+### Terraform Modules ###
+* [GSA/grace-tf-module-budget](https://github.com/GSA/grace-tf-module-budget)
+* [GSA/grace-tf-module-member-account](https://github.com/GSA/grace-tf-module-member-account)
+
+## Private ##
+* [GSA/grace-core](https://github.com/GSA/grace-core)
+* [GSA/grace-ansible-role-bridge-dns](https://github.com/GSA/grace-ansible-role-bridge-dns)
+* [SA/grace-network-security](https://github.com/GSA/grace-network-security)
+
+### Terraform Modules ###
+* [GSA/grace-logging](https://github.com/GSA/grace-logging)
+
+## Deprecated ##
+* [GSA/aws-account-broker](https://github.com/GSA/aws-account-broker)
+* [GSA/ansible-fluentd](https://github.com/GSA/ansible-fluentd)
+* [GSA/devsecops-cloud-custodian-rules](https://github.com/GSA/devsecops-cloud-custodian-rules)
+* [GSA/devsecops-ebs-backup](https://github.com/GSA/devsecops-ebs-backup)
+* [GSA/devsecops-ekk-stack](https://github.com/GSA/devsecops-ekk-stack)
+* [GSA/devsecops-example](https://github.com/GSA/devsecops-example)
+* [GSA/devsecops-iam-roles](https://github.com/GSA/devsecops-iam-roles)
+* [GSA/devsecops-log-forwarding](https://github.com/GSA/devsecops-log-forwarding)
+* [GSA/devsecops-subaccount-admin](https://github.com/GSA/devsecops-subaccount-admin)
+* [GSA/devsecops-tenant-networking](https://github.com/GSA/devsecops-tenant-networking)
