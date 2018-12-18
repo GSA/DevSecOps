@@ -15,9 +15,11 @@ GRACE implements 1 AWS subaccount per VPC, per environment, per app:
 You may wish to consult the following example repos for ideas or templates to implement GRACE.
 
 ## Public ##
+* [GSA/grace-circleci-builder](https://github.com/GSA/grace-circleci-builder)
 * [GSA/grace-example](https://github.com/GSA/grace-example)
 * [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda)
 * [GSA/grace-rhel-ami](https://github.com/GSA/grace-rhel-ami)
+* [GSA/grace-tftest](https://github.com/GSA/grace-tftest)
 * [GSA/grace-ubuntu-ami](https://github.com/GSA/grace-ubuntu-ami)
 * [GSA/security-benchmarks](https://github.com/GSA/security-benchmarks)
 
