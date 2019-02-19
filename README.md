@@ -30,7 +30,7 @@ You may wish to consult the following example repos for ideas or templates to im
 ## Private ##
 * [GSA/grace-core](https://github.com/GSA/grace-core)
 * [GSA/grace-ansible-role-bridge-dns](https://github.com/GSA/grace-ansible-role-bridge-dns)
-* [SA/grace-network-security](https://github.com/GSA/grace-network-security)
+* [GSA/grace-network-security](https://github.com/GSA/grace-network-security)
 
 ### Terraform Modules ###
 * [GSA/grace-logging](https://github.com/GSA/grace-logging)
