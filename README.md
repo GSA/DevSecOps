@@ -19,6 +19,7 @@ You may wish to consult the following example repos for ideas or templates to im
 * [GSA/grace-tftest](https://github.com/GSA/grace-tftest)
 
 ## Private ##
+* [GSA/grace-build](https://github.com/GSA/grace-build)
 * [GSA/grace-core](https://github.com/GSA/grace-core)
 * [GSA/grace-logging](https://github.com/GSA/grace-logging)
 
