@@ -16,23 +16,11 @@ You may wish to consult the following example repos for ideas or templates to im
 
 ## Public ##
 * [GSA/grace-circleci-builder](https://github.com/GSA/grace-circleci-builder)
-* [GSA/grace-example](https://github.com/GSA/grace-example)
 * [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda)
-* [GSA/grace-rhel-ami](https://github.com/GSA/grace-rhel-ami)
 * [GSA/grace-tftest](https://github.com/GSA/grace-tftest)
-* [GSA/grace-ubuntu-ami](https://github.com/GSA/grace-ubuntu-ami)
-* [GSA/security-benchmarks](https://github.com/GSA/security-benchmarks)
-
-### Terraform Modules ###
-* [GSA/grace-tf-module-budget](https://github.com/GSA/grace-tf-module-budget)
-* [GSA/grace-tf-module-member-account](https://github.com/GSA/grace-tf-module-member-account)
 
 ## Private ##
 * [GSA/grace-core](https://github.com/GSA/grace-core)
-* [GSA/grace-ansible-role-bridge-dns](https://github.com/GSA/grace-ansible-role-bridge-dns)
-* [GSA/grace-network-security](https://github.com/GSA/grace-network-security)
-
-### Terraform Modules ###
 * [GSA/grace-logging](https://github.com/GSA/grace-logging)
 
 ## Deprecated ##
@@ -46,3 +34,11 @@ You may wish to consult the following example repos for ideas or templates to im
 * [GSA/devsecops-log-forwarding](https://github.com/GSA/devsecops-log-forwarding)
 * [GSA/devsecops-subaccount-admin](https://github.com/GSA/devsecops-subaccount-admin)
 * [GSA/devsecops-tenant-networking](https://github.com/GSA/devsecops-tenant-networking)
+* [GSA/grace-example](https://github.com/GSA/grace-example)
+* [GSA/grace-rhel-ami](https://github.com/GSA/grace-rhel-ami)
+* [GSA/grace-ubuntu-ami](https://github.com/GSA/grace-ubuntu-ami)
+* [GSA/security-benchmarks](https://github.com/GSA/security-benchmarks)
+* [GSA/grace-tf-module-budget](https://github.com/GSA/grace-tf-module-budget)
+* [GSA/grace-tf-module-member-account](https://github.com/GSA/grace-tf-module-member-account)
+* [GSA/grace-ansible-role-bridge-dns](https://github.com/GSA/grace-ansible-role-bridge-dns)
+* [GSA/grace-network-security](https://github.com/GSA/grace-network-security)
