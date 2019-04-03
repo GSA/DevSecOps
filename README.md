@@ -16,7 +16,6 @@ You may wish to consult the following example repos for ideas or templates to im
 
 ## Public ##
 * [GSA/grace-circleci-builder](https://github.com/GSA/grace-circleci-builder)
-* [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda)
 * [GSA/grace-tftest](https://github.com/GSA/grace-tftest)
 
 ## Private ##
@@ -42,3 +41,4 @@ You may wish to consult the following example repos for ideas or templates to im
 * [GSA/grace-tf-module-member-account](https://github.com/GSA/grace-tf-module-member-account)
 * [GSA/grace-ansible-role-bridge-dns](https://github.com/GSA/grace-ansible-role-bridge-dns)
 * [GSA/grace-network-security](https://github.com/GSA/grace-network-security)
+* [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda)
