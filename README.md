@@ -16,7 +16,7 @@ You may wish to consult the following example repos for ideas or templates to im
 
 ## Public ##
 | Repository | Build Status |
-|----------------------------|
+| ---------- | ------------ |
 | [GSA/grace-account-lockout](https://github.com/grace-account-lockout) | [![CircleCI](https://circleci.com/gh/GSA/grace-account-lockout.svg?style=svg)](https://circleci.com/gh/GSA/grace-account-lockout) |
 | [GSA/grace-app](https://github.com/GSA/grace-app) |
 | [GSA/grace-circleci-builder](https://github.com/GSA/grace-circleci-builder) | [![CircleCI](https://circleci.com/gh/GSA/grace-circleci-builder.svg?style=svg)](https://circleci.com/gh/GSA/grace-circleci-builder) |
