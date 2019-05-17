@@ -27,7 +27,7 @@ You may wish to consult the following example repos for ideas or templates to im
 ## Private ##
 | Repository | Build Status |
 | ---------- | ------------ |
-| [GSA/grace-build](https://github.com/GSA/grace-build) | [![CircleCI](https://circleci.com/gh/GSA/grace-build.svg?style=svg)](https://circleci.com/gh/GSA/grace-build) |
+| [GSA/grace-build](https://github.com/GSA/grace-build) | [![CircleCI](https://circleci.com/gh/GSA/grace-build.svg?style=svg&circle-token=6b07cc7993c4c038236c25c794e6b7ba334cc83d)](https://circleci.com/gh/GSA/grace-build) |
 | [GSA/grace-core](https://github.com/GSA/grace-core) | [![CircleCI](https://circleci.com/gh/GSA/grace-core.svg?style=svg&circle-token=d0bdc1c9e646280312a4a8254f7c8d4698c8729f)](https://circleci.com/gh/GSA/grace-core) |
 | [GSA/grace-logging](https://github.com/GSA/grace-logging) | [![CircleCI](https://circleci.com/gh/GSA/grace-logging.svg?style=svg&circle-token=fe4919d129e0a79d08448086f540b960a845a4b2)](https://circleci.com/gh/GSA/grace-logging) |
 
@@ -43,7 +43,6 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/devsecops-iam-roles](https://github.com/GSA/devsecops-iam-roles) |
 | [GSA/devsecops-log-forwarding](https://github.com/GSA/devsecops-log-forwarding) | [![CircleCI](https://circleci.com/gh/GSA/devsecops-log-forwarding.svg?style=svg)](https://circleci.com/gh/GSA/devsecops-log-forwarding) |
 | [GSA/devsecops-subaccount-admin](https://github.com/GSA/devsecops-subaccount-admin) |
-| [GSA/devsecops-tenant-networking](https://github.com/GSA/devsecops-tenant-networking) | [![CircleCI](https://circleci.com/gh/GSA/devsecops-tenant-networking.svg?style=svg)](https://circleci.com/gh/GSA/devsecops-tenant-networking) |
 | [GSA/grace-ansible-role-bridge-dns](https://github.com/GSA/grace-ansible-role-bridge-dns) |
 | [GSA/grace-example](https://github.com/GSA/grace-example) | [![CircleCI](https://circleci.com/gh/GSA/grace-example.svg?style=svg)](https://circleci.com/gh/GSA/grace-example) |
 | [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory-lambda.svg?style=svg)](https://circleci.com/gh/GSA/grace-inventory-lambda) |
