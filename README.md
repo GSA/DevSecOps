@@ -15,12 +15,14 @@ GRACE implements 1 AWS subaccount per VPC, per environment, per app:
 You may wish to consult the following example repos for ideas or templates to implement GRACE.
 
 ## Public ##
-* [GSA/grace-account-lockout](https://github.com/grace-account-lockout)[![CircleCI](https://circleci.com/gh/GSA/grace-account-lockout.svg?style=svg)](https://circleci.com/gh/GSA/grace-account-lockout)
-* [GSA/grace-app](https://github.com/GSA/grace-app)
-* [GSA/grace-circleci-builder](https://github.com/GSA/grace-circleci-builder)[![CircleCI](https://circleci.com/gh/GSA/grace-circleci-builder.svg?style=svg)](https://circleci.com/gh/GSA/grace-circleci-builder)
-* [GSA/grace-citest](https://github.com/GSA/grace-citest)[![CircleCI](https://circleci.com/gh/GSA/grace-citest.svg?style=svg)](https://circleci.com/gh/GSA/grace-citest)
-* [GSA/grace-customer](https://github.com/GSA/grace-customer)[![CircleCI](https://circleci.com/gh/GSA/grace-customer.svg?style=svg)](https://circleci.com/gh/GSA/grace-customer)
-* [GSA/grace-tftest](https://github.com/GSA/grace-tftest)[![CircleCI](https://circleci.com/gh/GSA/grace-tftest.svg?style=svg)](https://circleci.com/gh/GSA/grace-tftest)
+| Repository | Build Status |
+|----------------------------|
+| [GSA/grace-account-lockout](https://github.com/grace-account-lockout) | [![CircleCI](https://circleci.com/gh/GSA/grace-account-lockout.svg?style=svg)](https://circleci.com/gh/GSA/grace-account-lockout) |
+| [GSA/grace-app](https://github.com/GSA/grace-app) |
+| [GSA/grace-circleci-builder](https://github.com/GSA/grace-circleci-builder) | [![CircleCI](https://circleci.com/gh/GSA/grace-circleci-builder.svg?style=svg)](https://circleci.com/gh/GSA/grace-circleci-builder) |
+| [GSA/grace-citest](https://github.com/GSA/grace-citest) | [![CircleCI](https://circleci.com/gh/GSA/grace-citest.svg?style=svg)](https://circleci.com/gh/GSA/grace-citest) |
+| [GSA/grace-customer](https://github.com/GSA/grace-customer) | [![CircleCI](https://circleci.com/gh/GSA/grace-customer.svg?style=svg)](https://circleci.com/gh/GSA/grace-customer) |
+| [GSA/grace-tftest](https://github.com/GSA/grace-tftest) | [![CircleCI](https://circleci.com/gh/GSA/grace-tftest.svg?style=svg)](https://circleci.com/gh/GSA/grace-tftest) |
 
 ## Private ##
 * [GSA/grace-build](https://github.com/GSA/grace-build)[![CircleCI](https://circleci.com/gh/GSA/grace-build.svg?style=svg)](https://circleci.com/gh/GSA/grace-build)
