@@ -20,6 +20,8 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-app](https://github.com/GSA/grace-app) | ![No Builds](images/na.svg) |
 | [GSA/grace-circleci-builder](https://github.com/GSA/grace-circleci-builder) | [![CircleCI](https://circleci.com/gh/GSA/grace-circleci-builder.svg?style=svg)](https://circleci.com/gh/GSA/grace-circleci-builder) |
 | [GSA/grace-citest](https://github.com/GSA/grace-citest) | [![CircleCI](https://circleci.com/gh/GSA/grace-citest.svg?style=svg)](https://circleci.com/gh/GSA/grace-citest) |
+| [GSA/grace-cloudcustodian](https://github.com/GSA/grace-cloudcustodian) | [![CircleCI](https://circleci.com/gh/GSA/grace-cloudcustodian.svg?style=svg)](https://circleci.com/gh/GSA/grace-cloudcustodian) |
+| [GSA/grace-fcs-network](https://github.com/GSA/grace-fcs-network) | [![CircleCI](https://circleci.com/gh/GSA/grace-fcs-network.svg?style=svg)](https://circleci.com/gh/GSA/grace-fcs-network) |
 | [GSA/grace-inventory](https://github.com/GSA/grace-inventory) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory.svg?style=svg)](https://circleci.com/gh/GSA/grace-inventory) |
 | [GSA/grace-logging](https://github.com/GSA/grace-logging) | [![CircleCI](https://circleci.com/gh/GSA/grace-logging.svg?style=svg&circle-token=3ba172998300c4ff769a83484c82c8305c8357e7)](https://circleci.com/gh/GSA/grace-logging) |
 | [GSA/grace-securityhub](https://github.com/GSA/grace-securityhub) | [![CircleCI](https://circleci.com/gh/GSA/grace-securityhub.svg?style=svg&circle-token=a32c37fff5293d7e05b63616c8644aedb3c04832)](https://circleci.com/gh/GSA/grace-securityhub) |
@@ -37,6 +39,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-customer](https://github.com/GSA/grace-customer) | [![CircleCI](https://circleci.com/gh/GSA/grace-customer.svg?style=svg&circle-token=7e53b3a7f13a014a3dabbcd56a6e27120ba1d405)](https://circleci.com/gh/GSA/grace-customer) |
 | [GSA/grace-inventory-tests](https://github.com/GSA/grace-inventory-tests) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory-tests.svg?style=svg&circle-token=f86712ce5167665fe0d4a23d4af4fe7e9a20f7de)](https://circleci.com/gh/GSA/grace-inventory-tests) |
 | [GSA/grace-logging-examples](https://github.com/GSA/grace-logging-examples) | [![CircleCI](https://circleci.com/gh/GSA/grace-logging-examples.svg?style=svg&circle-token=7764e93956515e856f81bf9e07d230f36b0b2b5b)](https://circleci.com/gh/GSA/grace-logging-examples) |
+| [GSA/grace-ssp](https://github.com/GSA/grace-ssp) | ![No Builds](images/na.svg) |
 | [GSA/grace-template](https://github.com/GSA/grace-template) | ![No Builds](images/na.svg) |
 
 ## Deprecated ##
@@ -56,8 +59,8 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-example](https://github.com/GSA/grace-example) | [![CircleCI](https://circleci.com/gh/GSA/grace-example.svg?style=svg)](https://circleci.com/gh/GSA/grace-example) |
 | [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory-lambda.svg?style=svg&circle-token=f42001ceadc8013191d56097c18d356b202e706e)](https://circleci.com/gh/GSA/grace-inventory-lambda) |
 | [GSA/grace-rhel-ami](https://github.com/GSA/grace-rhel-ami) | [![CircleCI](https://circleci.com/gh/GSA/grace-rhel-ami.svg?style=svg)](https://circleci.com/gh/GSA/grace-rhel-ami) |
-| [GSA/grace-sqs-poc](https://github.com/GSA/grace-sqs-poc) | ![Archived](images/archived.png) |
-| [GSA/grace-tenant-cleanup](https://github.com/GSA/grace-tenant-cleanup) | ![Archived](images/archived.png) |
+| [GSA/grace-sqs-poc](https://github.com/GSA/grace-sqs-poc) | ![Archived](images/na.svg) |
+| [GSA/grace-tenant-cleanup](https://github.com/GSA/grace-tenant-cleanup) | ![Archived](images/na.svg) |
 | [GSA/grace-tf-module-budget](https://github.com/GSA/grace-tf-module-budget) | [![CircleCI](https://circleci.com/gh/GSA/grace-tf-module-budget.svg?style=svg)](https://circleci.com/gh/GSA/grace-tf-module-budget) |
 | [GSA/grace-tf-module-member-account](https://github.com/GSA/grace-tf-module-member-account) | [![CircleCI](https://circleci.com/gh/GSA/grace-tf-module-member-account.svg?style=svg)](https://circleci.com/gh/GSA/grace-tf-module-member-account) |
 | [GSA/grace-ubuntu-ami](https://github.com/GSA/grace-ubuntu-ami) | [![CircleCI](https://circleci.com/gh/GSA/grace-ubuntu-ami.svg?style=svg)](https://circleci.com/gh/GSA/grace-ubuntu-ami) |
