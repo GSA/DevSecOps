@@ -54,7 +54,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/devsecops-iam-roles](https://github.com/GSA/devsecops-iam-roles) | ![No Builds](images/na.svg) |
 | [GSA/devsecops-log-forwarding](https://github.com/GSA/devsecops-log-forwarding) | [![CircleCI](https://circleci.com/gh/GSA/devsecops-log-forwarding.svg?style=svg)](https://circleci.com/gh/GSA/devsecops-log-forwarding) |
 | [GSA/devsecops-subaccount-admin](https://github.com/GSA/devsecops-subaccount-admin) | ![No Builds](images/na.svg) |
-| [GSA/grace-account-lockout](https://github.com/grace-account-lockout) | ![Archived](images/archived.svg) |
+| [GSA/grace-account-lockout](https://github.com/grace-account-lockout) | ![Archived](images/na.svg) |
 | [GSA/grace-ansible-role-bridge-dns](https://github.com/GSA/grace-ansible-role-bridge-dns) | ![No Builds](images/na.svg) |
 | [GSA/grace-example](https://github.com/GSA/grace-example) | [![CircleCI](https://circleci.com/gh/GSA/grace-example.svg?style=svg)](https://circleci.com/gh/GSA/grace-example) |
 | [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory-lambda.svg?style=svg&circle-token=f42001ceadc8013191d56097c18d356b202e706e)](https://circleci.com/gh/GSA/grace-inventory-lambda) |
