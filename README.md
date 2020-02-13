@@ -38,6 +38,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-core](https://github.com/GSA/grace-core) | [![CircleCI](https://circleci.com/gh/GSA/grace-core.svg?style=svg&circle-token=d0bdc1c9e646280312a4a8254f7c8d4698c8729f)](https://circleci.com/gh/GSA/grace-core) |
 | [GSA/grace-custodian](https://github.com/GSA/grace-custodian) | [![CircleCI](https://circleci.com/gh/GSA/grace-custodian.svg?style=svg&circle-token=a99463d5a32501483181c14bc4b058d4e6135c8c)](https://circleci.com/gh/GSA/grace-custodian) |
 | [GSA/grace-customer](https://github.com/GSA/grace-customer) | [![CircleCI](https://circleci.com/gh/GSA/grace-customer.svg?style=svg&circle-token=7e53b3a7f13a014a3dabbcd56a6e27120ba1d405)](https://circleci.com/gh/GSA/grace-customer) |
+| [GSA/grace-guardrails](https://github.com/GSA/grace-guardrails) | ![No Builds](images/na.svg) |
 | [GSA/grace-inventory-tests](https://github.com/GSA/grace-inventory-tests) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory-tests.svg?style=svg&circle-token=f86712ce5167665fe0d4a23d4af4fe7e9a20f7de)](https://circleci.com/gh/GSA/grace-inventory-tests) |
 | [GSA/grace-logging-examples](https://github.com/GSA/grace-logging-examples) | [![CircleCI](https://circleci.com/gh/GSA/grace-logging-examples.svg?style=svg&circle-token=7764e93956515e856f81bf9e07d230f36b0b2b5b)](https://circleci.com/gh/GSA/grace-logging-examples) |
 | [GSA/grace-ssp](https://github.com/GSA/grace-ssp) | ![No Builds](images/na.svg) |
