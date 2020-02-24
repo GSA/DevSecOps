@@ -17,10 +17,12 @@ You may wish to consult the following example repos for ideas or templates to im
 ## Public ##
 | Repository | Build Status |
 | ---------- | ------------ |
+| [GSA/grace-alerting](https://github.com/GSA/grace-alerting) | [![CircleCI](https://circleci.com/gh/GSA/grace-alerting.svg?style=svg)](https://circleci.com/gh/GSA/grace-alerting) |
 | [GSA/grace-app](https://github.com/GSA/grace-app) | ![No Builds](images/na.svg) |
 | [GSA/grace-circleci-builder](https://github.com/GSA/grace-circleci-builder) | [![CircleCI](https://circleci.com/gh/GSA/grace-circleci-builder.svg?style=svg)](https://circleci.com/gh/GSA/grace-circleci-builder) |
 | [GSA/grace-citest](https://github.com/GSA/grace-citest) | [![CircleCI](https://circleci.com/gh/GSA/grace-citest.svg?style=svg)](https://circleci.com/gh/GSA/grace-citest) |
 | [GSA/grace-cloudcustodian](https://github.com/GSA/grace-cloudcustodian) | [![CircleCI](https://circleci.com/gh/GSA/grace-cloudcustodian.svg?style=svg)](https://circleci.com/gh/GSA/grace-cloudcustodian) |
+| [GSA/grace-config](https://github.com/GSA/grace-config) | [![CircleCI](https://circleci.com/gh/GSA/grace-config.svg?style=svg)](https://circleci.com/gh/GSA/grace-config) |
 | [GSA/grace-fcs-network](https://github.com/GSA/grace-fcs-network) | [![CircleCI](https://circleci.com/gh/GSA/grace-fcs-network.svg?style=svg)](https://circleci.com/gh/GSA/grace-fcs-network) |
 | [GSA/grace-inventory](https://github.com/GSA/grace-inventory) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory.svg?style=svg)](https://circleci.com/gh/GSA/grace-inventory) |
 | [GSA/grace-log-parser](https://github.com/GSA/grace-log-parser) | [![CircleCI](https://circleci.com/gh/GSA/grace-log-parser.svg?style=svg)](https://circleci.com/gh/GSA/grace-log-parser) |
