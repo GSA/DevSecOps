@@ -23,6 +23,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-citest](https://github.com/GSA/grace-citest) | [![CircleCI](https://circleci.com/gh/GSA/grace-citest.svg?style=svg)](https://circleci.com/gh/GSA/grace-citest) |
 | [GSA/grace-cloudcustodian](https://github.com/GSA/grace-cloudcustodian) | [![CircleCI](https://circleci.com/gh/GSA/grace-cloudcustodian.svg?style=svg)](https://circleci.com/gh/GSA/grace-cloudcustodian) |
 | [GSA/grace-config](https://github.com/GSA/grace-config) | [![CircleCI](https://circleci.com/gh/GSA/grace-config.svg?style=svg)](https://circleci.com/gh/GSA/grace-config) |
+| [GSA/grace-config](https://github.com/GSA/grace-config-differ) | [![CircleCI](https://circleci.com/gh/GSA/grace-config-differ.svg?style=svg)](https://circleci.com/gh/GSA/grace-config-differ) |
 | [GSA/grace-fcs-network](https://github.com/GSA/grace-fcs-network) | [![CircleCI](https://circleci.com/gh/GSA/grace-fcs-network.svg?style=svg)](https://circleci.com/gh/GSA/grace-fcs-network) |
 | [GSA/grace-inventory](https://github.com/GSA/grace-inventory) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory.svg?style=svg)](https://circleci.com/gh/GSA/grace-inventory) |
 | [GSA/grace-log-parser](https://github.com/GSA/grace-log-parser) | [![CircleCI](https://circleci.com/gh/GSA/grace-log-parser.svg?style=svg)](https://circleci.com/gh/GSA/grace-log-parser) |
@@ -36,7 +37,6 @@ You may wish to consult the following example repos for ideas or templates to im
 | ---------- | ------------ |
 | [GSA/grace-bigfix](https://github.com/GSA/grace-bigfix) | ![No Builds](images/na.svg) |
 | [GSA/grace-build](https://github.com/GSA/grace-build) | [![CircleCI](https://circleci.com/gh/GSA/grace-build.svg?style=svg&circle-token=6b07cc7993c4c038236c25c794e6b7ba334cc83d)](https://circleci.com/gh/GSA/grace-build) |
-| [GSA/grace-cm-8-3](https://github.com/GSA/grace-cm-8-3) | [![CircleCI](https://circleci.com/gh/GSA/grace-cm-8-3.svg?style=svg&circle-token=34f81cb9295348a09e3ef7cc7b1366667519f208)](https://circleci.com/gh/GSA/grace-cm-8-3) |
 | [GSA/grace-core](https://github.com/GSA/grace-core) | [![CircleCI](https://circleci.com/gh/GSA/grace-core.svg?style=svg&circle-token=d0bdc1c9e646280312a4a8254f7c8d4698c8729f)](https://circleci.com/gh/GSA/grace-core) |
 | [GSA/grace-custodian](https://github.com/GSA/grace-custodian) | [![CircleCI](https://circleci.com/gh/GSA/grace-custodian.svg?style=svg&circle-token=a99463d5a32501483181c14bc4b058d4e6135c8c)](https://circleci.com/gh/GSA/grace-custodian) |
 | [GSA/grace-customer](https://github.com/GSA/grace-customer) | [![CircleCI](https://circleci.com/gh/GSA/grace-customer.svg?style=svg&circle-token=7e53b3a7f13a014a3dabbcd56a6e27120ba1d405)](https://circleci.com/gh/GSA/grace-customer) |
@@ -59,6 +59,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/devsecops-log-forwarding](https://github.com/GSA/devsecops-log-forwarding) | [![CircleCI](https://circleci.com/gh/GSA/devsecops-log-forwarding.svg?style=svg)](https://circleci.com/gh/GSA/devsecops-log-forwarding) |
 | [GSA/devsecops-subaccount-admin](https://github.com/GSA/devsecops-subaccount-admin) | ![No Builds](images/na.svg) |
 | [GSA/grace-account-lockout](https://github.com/GSA/grace-account-lockout) | ![Archived](images/na.svg) |
+| [GSA/grace-cm-8-3](https://github.com/GSA/grace-cm-8-3) | [![CircleCI](https://circleci.com/gh/GSA/grace-cm-8-3.svg?style=svg&circle-token=34f81cb9295348a09e3ef7cc7b1366667519f208)](https://circleci.com/gh/GSA/grace-cm-8-3) |
 | [GSA/grace-core-logging](https://github.com/GSA/grace-core-logging) | [![CircleCI](https://circleci.com/gh/GSA/grace-core-logging.svg?style=svg&circle-token=fe4919d129e0a79d08448086f540b960a845a4b2)](https://circleci.com/gh/GSA/grace-core-logging) |
 | [GSA/grace-example](https://github.com/GSA/grace-example) | [![CircleCI](https://circleci.com/gh/GSA/grace-example.svg?style=svg)](https://circleci.com/gh/GSA/grace-example) |
 | [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory-lambda.svg?style=svg&circle-token=f42001ceadc8013191d56097c18d356b202e706e)](https://circleci.com/gh/GSA/grace-inventory-lambda) |
