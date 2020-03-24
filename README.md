@@ -25,6 +25,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-config](https://github.com/GSA/grace-config) | [![CircleCI](https://circleci.com/gh/GSA/grace-config.svg?style=svg)](https://circleci.com/gh/GSA/grace-config) |
 | [GSA/grace-config-differ](https://github.com/GSA/grace-config-differ) | [![CircleCI](https://circleci.com/gh/GSA/grace-config-differ.svg?style=svg)](https://circleci.com/gh/GSA/grace-config-differ) |
 | [GSA/grace-fcs-network](https://github.com/GSA/grace-fcs-network) | [![CircleCI](https://circleci.com/gh/GSA/grace-fcs-network.svg?style=svg)](https://circleci.com/gh/GSA/grace-fcs-network) |
+| [GSA/grace-iam](https://github.com/GSA/grace-iam) | [![CircleCI](https://circleci.com/gh/GSA/grace-iam.svg?style=svg)](https://circleci.com/gh/GSA/grace-iam) |
 | [GSA/grace-inventory](https://github.com/GSA/grace-inventory) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory.svg?style=svg)](https://circleci.com/gh/GSA/grace-inventory) |
 | [GSA/grace-log-parser](https://github.com/GSA/grace-log-parser) | [![CircleCI](https://circleci.com/gh/GSA/grace-log-parser.svg?style=svg)](https://circleci.com/gh/GSA/grace-log-parser) |
 | [GSA/grace-logging](https://github.com/GSA/grace-logging) | [![CircleCI](https://circleci.com/gh/GSA/grace-logging.svg?style=svg&circle-token=3ba172998300c4ff769a83484c82c8305c8357e7)](https://circleci.com/gh/GSA/grace-logging) |
@@ -58,11 +59,9 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/devsecops-log-forwarding](https://github.com/GSA/devsecops-log-forwarding) | [![CircleCI](https://circleci.com/gh/GSA/devsecops-log-forwarding.svg?style=svg)](https://circleci.com/gh/GSA/devsecops-log-forwarding) |
 | [GSA/devsecops-subaccount-admin](https://github.com/GSA/devsecops-subaccount-admin) | ![No Builds](images/na.svg) |
 | [GSA/grace-account-lockout](https://github.com/GSA/grace-account-lockout) | ![Archived](images/na.svg) |
-| [GSA/grace-cm-8-3](https://github.com/GSA/grace-cm-8-3) | [![CircleCI](https://circleci.com/gh/GSA/grace-cm-8-3.svg?style=svg&circle-token=34f81cb9295348a09e3ef7cc7b1366667519f208)](https://circleci.com/gh/GSA/grace-cm-8-3) |
 | [GSA/grace-core-logging](https://github.com/GSA/grace-core-logging) | [![CircleCI](https://circleci.com/gh/GSA/grace-core-logging.svg?style=svg&circle-token=fe4919d129e0a79d08448086f540b960a845a4b2)](https://circleci.com/gh/GSA/grace-core-logging) |
 | [GSA/grace-custodian](https://github.com/GSA/grace-custodian) | [![CircleCI](https://circleci.com/gh/GSA/grace-custodian.svg?style=svg&circle-token=a99463d5a32501483181c14bc4b058d4e6135c8c)](https://circleci.com/gh/GSA/grace-custodian) |
 | [GSA/grace-example](https://github.com/GSA/grace-example) | [![CircleCI](https://circleci.com/gh/GSA/grace-example.svg?style=svg)](https://circleci.com/gh/GSA/grace-example) |
-| [GSA/grace-inventory-lambda](https://github.com/GSA/grace-inventory-lambda) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory-lambda.svg?style=svg&circle-token=f42001ceadc8013191d56097c18d356b202e706e)](https://circleci.com/gh/GSA/grace-inventory-lambda) |
 | [GSA/grace-rhel-ami](https://github.com/GSA/grace-rhel-ami) | [![CircleCI](https://circleci.com/gh/GSA/grace-rhel-ami.svg?style=svg)](https://circleci.com/gh/GSA/grace-rhel-ami) |
 | [GSA/grace-sqs-poc](https://github.com/GSA/grace-sqs-poc) | ![Archived](images/na.svg) |
 | [GSA/grace-tenant-cleanup](https://github.com/GSA/grace-tenant-cleanup) | ![Archived](images/na.svg) |
