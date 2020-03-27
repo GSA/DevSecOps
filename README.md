@@ -36,7 +36,6 @@ You may wish to consult the following example repos for ideas or templates to im
 ## Private ##
 | Repository | Build Status |
 | ---------- | ------------ |
-| [GSA/grace-bigfix](https://github.com/GSA/grace-bigfix) | ![No Builds](images/na.svg) |
 | [GSA/grace-build](https://github.com/GSA/grace-build) | [![CircleCI](https://circleci.com/gh/GSA/grace-build.svg?style=svg&circle-token=6b07cc7993c4c038236c25c794e6b7ba334cc83d)](https://circleci.com/gh/GSA/grace-build) |
 | [GSA/grace-core](https://github.com/GSA/grace-core) | [![CircleCI](https://circleci.com/gh/GSA/grace-core.svg?style=svg&circle-token=d0bdc1c9e646280312a4a8254f7c8d4698c8729f)](https://circleci.com/gh/GSA/grace-core) |
 | [GSA/grace-customer](https://github.com/GSA/grace-customer) | [![CircleCI](https://circleci.com/gh/GSA/grace-customer.svg?style=svg&circle-token=7e53b3a7f13a014a3dabbcd56a6e27120ba1d405)](https://circleci.com/gh/GSA/grace-customer) |
@@ -45,6 +44,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-logging-examples](https://github.com/GSA/grace-logging-examples) | [![CircleCI](https://circleci.com/gh/GSA/grace-logging-examples.svg?style=svg&circle-token=7764e93956515e856f81bf9e07d230f36b0b2b5b)](https://circleci.com/gh/GSA/grace-logging-examples) |
 | [GSA/grace-ssp](https://github.com/GSA/grace-ssp) | ![No Builds](images/na.svg) |
 | [GSA/grace-template](https://github.com/GSA/grace-template) | ![No Builds](images/na.svg) |
+| [GSA/IDT-BigFix](https://github.com/GSA/IDT-BigFix) | [![CircleCI](https://circleci.com/gh/GSA/IDT-BigFix.svg?style=svg&circle-token=14c1b058f570454f69bd3fee2392fd903030a15c)](https://circleci.com/gh/GSA/IDT-BigFix) |
 
 ## Deprecated ##
 | Repository | Build Status |
