@@ -62,8 +62,6 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/devsecops-log-forwarding](https://github.com/GSA/devsecops-log-forwarding) | [![CircleCI](https://circleci.com/gh/GSA/devsecops-log-forwarding.svg?style=svg)](https://circleci.com/gh/GSA/devsecops-log-forwarding) |
 | [GSA/devsecops-subaccount-admin](https://github.com/GSA/devsecops-subaccount-admin) | ![No Builds](images/na.svg) |
 | [GSA/grace-account-lockout](https://github.com/GSA/grace-account-lockout) | ![Archived](images/na.svg) |
-| [GSA/grace-core-logging](https://github.com/GSA/grace-core-logging) | [![CircleCI](https://circleci.com/gh/GSA/grace-core-logging.svg?style=svg&circle-token=fe4919d129e0a79d08448086f540b960a845a4b2)](https://circleci.com/gh/GSA/grace-core-logging) |
-| [GSA/grace-custodian](https://github.com/GSA/grace-custodian) | [![CircleCI](https://circleci.com/gh/GSA/grace-custodian.svg?style=svg&circle-token=a99463d5a32501483181c14bc4b058d4e6135c8c)](https://circleci.com/gh/GSA/grace-custodian) |
 | [GSA/grace-example](https://github.com/GSA/grace-example) | [![CircleCI](https://circleci.com/gh/GSA/grace-example.svg?style=svg)](https://circleci.com/gh/GSA/grace-example) |
 | [GSA/grace-rhel-ami](https://github.com/GSA/grace-rhel-ami) | [![CircleCI](https://circleci.com/gh/GSA/grace-rhel-ami.svg?style=svg)](https://circleci.com/gh/GSA/grace-rhel-ami) |
 | [GSA/grace-sqs-poc](https://github.com/GSA/grace-sqs-poc) | ![Archived](images/na.svg) |
