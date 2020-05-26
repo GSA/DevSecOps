@@ -31,6 +31,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-logging](https://github.com/GSA/grace-logging) | [![CircleCI](https://circleci.com/gh/GSA/grace-logging.svg?style=svg)](https://circleci.com/gh/GSA/grace-logging) |
 | [GSA/grace-paas-network](https://github.com/GSA/grace-paas-network) | [![CircleCI](https://circleci.com/gh/GSA/grace-paas-network.svg?style=svg)](https://circleci.com/gh/GSA/grace-paas-network) |
 | [GSA/grace-paas-rds](https://github.com/GSA/grace-paas-rds) | [![CircleCI](https://circleci.com/gh/GSA/grace-paas-rds.svg?style=svg)](https://circleci.com/gh/GSA/grace-paas-rds) |
+| [GSA/grace-rotate-accesskeys](https://github.com/GSA/grace-rotate-accesskeys) | [![CircleCI](https://circleci.com/gh/GSA/grace-rotate-accesskeys.svg?style=svg)](https://circleci.com/gh/GSA/grace-rotate-accesskeys) |
 | [GSA/grace-securityhub](https://github.com/GSA/grace-securityhub) | [![CircleCI](https://circleci.com/gh/GSA/grace-securityhub.svg?style=svg)](https://circleci.com/gh/GSA/grace-securityhub) |
 | [GSA/grace-style-guide](https://github.com/GSA/grace-style-guide) | ![No Builds](images/na.svg) |
 | [GSA/grace-tftest](https://github.com/GSA/grace-tftest) | [![CircleCI](https://circleci.com/gh/GSA/grace-tftest.svg?style=svg)](https://circleci.com/gh/GSA/grace-tftest) |
