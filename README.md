@@ -29,6 +29,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-inventory](https://github.com/GSA/grace-inventory) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory.svg?style=svg)](https://circleci.com/gh/GSA/grace-inventory) |
 | [GSA/grace-log-parser](https://github.com/GSA/grace-log-parser) | [![CircleCI](https://circleci.com/gh/GSA/grace-log-parser.svg?style=svg)](https://circleci.com/gh/GSA/grace-log-parser) |
 | [GSA/grace-logging](https://github.com/GSA/grace-logging) | [![CircleCI](https://circleci.com/gh/GSA/grace-logging.svg?style=svg)](https://circleci.com/gh/GSA/grace-logging) |
+| [GSA/grace-paas-network](https://github.com/GSA/grace-paas-network) | [![CircleCI](https://circleci.com/gh/GSA/grace-paas-network.svg?style=svg)](https://circleci.com/gh/GSA/grace-paas-network) |
 | [GSA/grace-paas-rds](https://github.com/GSA/grace-paas-rds) | [![CircleCI](https://circleci.com/gh/GSA/grace-paas-rds.svg?style=svg)](https://circleci.com/gh/GSA/grace-paas-rds) |
 | [GSA/grace-securityhub](https://github.com/GSA/grace-securityhub) | [![CircleCI](https://circleci.com/gh/GSA/grace-securityhub.svg?style=svg)](https://circleci.com/gh/GSA/grace-securityhub) |
 | [GSA/grace-style-guide](https://github.com/GSA/grace-style-guide) | ![No Builds](images/na.svg) |
@@ -45,6 +46,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-inventory-tests](https://github.com/GSA/grace-inventory-tests) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory-tests.svg?style=svg&circle-token=f86712ce5167665fe0d4a23d4af4fe7e9a20f7de)](https://circleci.com/gh/GSA/grace-inventory-tests) |
 | [GSA/grace-logging-examples](https://github.com/GSA/grace-logging-examples) | [![CircleCI](https://circleci.com/gh/GSA/grace-logging-examples.svg?style=svg&circle-token=7764e93956515e856f81bf9e07d230f36b0b2b5b)](https://circleci.com/gh/GSA/grace-logging-examples) |
 | [GSA/grace-paas-baseline](https://github.com/GSA/grace-paas-baseline) | [![CircleCI](https://circleci.com/gh/GSA/grace-paas-baseline.svg?style=svg&circle-token=e9714b66e704218f32e190ebc9c8b3ffb9b92660)](https://circleci.com/gh/GSA/grace-paas-baseline) |
+| [GSA/grace-paas-iam](https://github.com/GSA/grace-paas-iam) | [![CircleCI](https://circleci.com/gh/GSA/grace-paas-iam.svg?style=svg&circle-token=e9714b66e704218f32e190ebc9c8b3ffb9b92660)](https://circleci.com/gh/GSA/grace-paas-iam) |
 | [GSA/grace-ssp](https://github.com/GSA/grace-ssp) | ![No Builds](images/na.svg) |
 | [GSA/grace-template](https://github.com/GSA/grace-template) | ![No Builds](images/na.svg) |
 | [GSA/IDT-BigFix](https://github.com/GSA/IDT-BigFix) | [![CircleCI](https://circleci.com/gh/GSA/IDT-BigFix.svg?style=svg&circle-token=14c1b058f570454f69bd3fee2392fd903030a15c)](https://circleci.com/gh/GSA/IDT-BigFix) |
