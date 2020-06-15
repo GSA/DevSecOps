@@ -40,10 +40,10 @@ You may wish to consult the following example repos for ideas or templates to im
 ## Private ##
 | Repository | Build Status |
 | ---------- | ------------ |
-| [GSA/cabgsa](https://github.com/GSA/cabgsa) | [![CircleCI](https://circleci.com/gh/GSA/cabgsa.svg?style=svg)](https://circleci.com/gh/GSA/cabgsa) |
+| [GSA/cabgsa](https://github.com/GSA/cabgsa) | [![CircleCI](https://circleci.com/gh/GSA/cabgsa.svg?style=svg&circle-token=7e5767ae45f07103cbf60666b91667eb3371d05c)](https://circleci.com/gh/GSA/cabgsa) |
 | [GSA/idto-sandbox](https://github.com/GSA/idto-sandbox) | [![CircleCI](https://circleci.com/gh/GSA/idto-sandbox.svg?style=svg&circle-token=48c576c0d1c952d6611dfda9664f58dcb6d36984)](https://circleci.com/gh/GSA/idto-sandbox) |
 | [GSA/g-grace](https://github.com/GSA/g-grace) | [![CircleCI](https://circleci.com/gh/GSA/g-grace.svg?style=svg&circle-token=02b1d5da3261a04e5ec9ed46e53520ebd9b3bbb0)](https://circleci.com/gh/GSA/g-grace) |
-| [GSA/grace-actions](https://github.com/GSA/grace-actions) | [![CircleCI](https://circleci.com/gh/GSA/grace-actions.svg?style=svg)](https://circleci.com/gh/GSA/grace-actions) |
+| [GSA/grace-actions](https://github.com/GSA/grace-actions) | [![CircleCI](https://circleci.com/gh/GSA/grace-actions.svg?style=svg&circle-token=2484edcee468d51d8331377ffe25d825a8f41cdd)](https://circleci.com/gh/GSA/grace-actions) |
 | [GSA/grace-build](https://github.com/GSA/grace-build) | [![CircleCI](https://circleci.com/gh/GSA/grace-build.svg?style=svg&circle-token=6b07cc7993c4c038236c25c794e6b7ba334cc83d)](https://circleci.com/gh/GSA/grace-build) |
 | [GSA/grace-core](https://github.com/GSA/grace-core) | [![CircleCI](https://circleci.com/gh/GSA/grace-core.svg?style=svg&circle-token=d0bdc1c9e646280312a4a8254f7c8d4698c8729f)](https://circleci.com/gh/GSA/grace-core) |
 | [GSA/grace-customer](https://github.com/GSA/grace-customer) | [![CircleCI](https://circleci.com/gh/GSA/grace-customer.svg?style=svg&circle-token=7e53b3a7f13a014a3dabbcd56a6e27120ba1d405)](https://circleci.com/gh/GSA/grace-customer) |
