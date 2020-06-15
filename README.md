@@ -34,23 +34,24 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-rotate-accesskeys](https://github.com/GSA/grace-rotate-accesskeys) | [![CircleCI](https://circleci.com/gh/GSA/grace-rotate-accesskeys.svg?style=svg)](https://circleci.com/gh/GSA/grace-rotate-accesskeys) |
 | [GSA/grace-securityhub](https://github.com/GSA/grace-securityhub) | [![CircleCI](https://circleci.com/gh/GSA/grace-securityhub.svg?style=svg)](https://circleci.com/gh/GSA/grace-securityhub) |
 | [GSA/grace-style-guide](https://github.com/GSA/grace-style-guide) | ![No Builds](images/na.svg) |
+| [GSA/grace-template](https://github.com/GSA/grace-template) | ![No Builds](images/na.svg) |
 | [GSA/grace-tftest](https://github.com/GSA/grace-tftest) | [![CircleCI](https://circleci.com/gh/GSA/grace-tftest.svg?style=svg)](https://circleci.com/gh/GSA/grace-tftest) |
 
 ## Private ##
 | Repository | Build Status |
 | ---------- | ------------ |
+| [GSA/cabgsa](https://github.com/GSA/cabgsa) | [![CircleCI](https://circleci.com/gh/GSA/cabgsa.svg?style=svg)](https://circleci.com/gh/GSA/cabgsa) |
 | [GSA/idto-sandbox](https://github.com/GSA/idto-sandbox) | [![CircleCI](https://circleci.com/gh/GSA/idto-sandbox.svg?style=svg&circle-token=48c576c0d1c952d6611dfda9664f58dcb6d36984)](https://circleci.com/gh/GSA/idto-sandbox) |
 | [GSA/g-grace](https://github.com/GSA/g-grace) | [![CircleCI](https://circleci.com/gh/GSA/g-grace.svg?style=svg&circle-token=02b1d5da3261a04e5ec9ed46e53520ebd9b3bbb0)](https://circleci.com/gh/GSA/g-grace) |
+| [GSA/grace-actions](https://github.com/GSA/grace-actions) | [![CircleCI](https://circleci.com/gh/GSA/grace-actions.svg?style=svg)](https://circleci.com/gh/GSA/grace-actions) |
 | [GSA/grace-build](https://github.com/GSA/grace-build) | [![CircleCI](https://circleci.com/gh/GSA/grace-build.svg?style=svg&circle-token=6b07cc7993c4c038236c25c794e6b7ba334cc83d)](https://circleci.com/gh/GSA/grace-build) |
 | [GSA/grace-core](https://github.com/GSA/grace-core) | [![CircleCI](https://circleci.com/gh/GSA/grace-core.svg?style=svg&circle-token=d0bdc1c9e646280312a4a8254f7c8d4698c8729f)](https://circleci.com/gh/GSA/grace-core) |
 | [GSA/grace-customer](https://github.com/GSA/grace-customer) | [![CircleCI](https://circleci.com/gh/GSA/grace-customer.svg?style=svg&circle-token=7e53b3a7f13a014a3dabbcd56a6e27120ba1d405)](https://circleci.com/gh/GSA/grace-customer) |
 | [GSA/grace-guardrails](https://github.com/GSA/grace-guardrails) | ![No Builds](images/na.svg) |
 | [GSA/grace-inventory-tests](https://github.com/GSA/grace-inventory-tests) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory-tests.svg?style=svg&circle-token=f86712ce5167665fe0d4a23d4af4fe7e9a20f7de)](https://circleci.com/gh/GSA/grace-inventory-tests) |
-| [GSA/grace-logging-examples](https://github.com/GSA/grace-logging-examples) | [![CircleCI](https://circleci.com/gh/GSA/grace-logging-examples.svg?style=svg&circle-token=7764e93956515e856f81bf9e07d230f36b0b2b5b)](https://circleci.com/gh/GSA/grace-logging-examples) |
 | [GSA/grace-paas-baseline](https://github.com/GSA/grace-paas-baseline) | [![CircleCI](https://circleci.com/gh/GSA/grace-paas-baseline.svg?style=svg&circle-token=e9714b66e704218f32e190ebc9c8b3ffb9b92660)](https://circleci.com/gh/GSA/grace-paas-baseline) |
 | [GSA/grace-paas-iam](https://github.com/GSA/grace-paas-iam) | [![CircleCI](https://circleci.com/gh/GSA/grace-paas-iam.svg?style=svg&circle-token=961a96ba43e8235fff81bcf55ba052bc9f6194e5)](https://circleci.com/gh/GSA/grace-paas-iam) |
 | [GSA/grace-ssp](https://github.com/GSA/grace-ssp) | ![No Builds](images/na.svg) |
-| [GSA/grace-template](https://github.com/GSA/grace-template) | ![No Builds](images/na.svg) |
 | [GSA/IDT-BigFix](https://github.com/GSA/IDT-BigFix) | [![CircleCI](https://circleci.com/gh/GSA/IDT-BigFix.svg?style=svg&circle-token=14c1b058f570454f69bd3fee2392fd903030a15c)](https://circleci.com/gh/GSA/IDT-BigFix) |
 
 ## Deprecated ##
