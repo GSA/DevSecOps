@@ -17,7 +17,9 @@ You may wish to consult the following example repos for ideas or templates to im
 ## Public ##
 | Repository | Build Status |
 | ---------- | ------------ |
+| [GSA/github-copy](https://github.com/GSA/github-copy) | [![CircleCI](https://circleci.com/gh/GSA/github-copy.svg?style=svg)](https://circleci.com/gh/GSA/github-copy) |
 | [GSA/grace-alerting](https://github.com/GSA/grace-alerting) | [![CircleCI](https://circleci.com/gh/GSA/grace-alerting.svg?style=svg)](https://circleci.com/gh/GSA/grace-alerting) |
+| [GSA/grace-ansible-lambda](https://github.com/GSA/grace-ansible-lambda) | [![CircleCI](https://circleci.com/gh/GSA/grace-ansible-lambda.svg?style=svg)](https://circleci.com/gh/GSA/grace-ansible-lambda) |
 | [GSA/grace-app](https://github.com/GSA/grace-app) | ![No Builds](images/na.svg) |
 | [GSA/grace-circleci-builder](https://github.com/GSA/grace-circleci-builder) | [![CircleCI](https://circleci.com/gh/GSA/grace-circleci-builder.svg?style=svg)](https://circleci.com/gh/GSA/grace-circleci-builder) |
 | [GSA/grace-citest](https://github.com/GSA/grace-citest) | [![CircleCI](https://circleci.com/gh/GSA/grace-citest.svg?style=svg)](https://circleci.com/gh/GSA/grace-citest) |
