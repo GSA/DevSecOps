@@ -17,9 +17,17 @@ You may wish to consult the following example repos for ideas or templates to im
 ## Public ##
 | Repository | Build Status |
 | ---------- | ------------ |
+| [GSA/ansible-activclient](https://github.com/GSA/ansible-activclient) | [![CircleCI](https://circleci.com/gh/GSA/ansible-activclient.svg?style=svg)](https://circleci.com/gh/GSA/ansible-activclient) |
+| [GSA/ansible-bigfix](https://github.com/GSA/ansible-bigfix) | [![CircleCI](https://circleci.com/gh/GSA/ansible-bigfix.svg?style=svg)](https://circleci.com/gh/GSA/ansible-bigfix) |
+| [GSA/ansible-bit9](https://github.com/GSA/ansible-bit9) | [![CircleCI](https://circleci.com/gh/GSA/ansible-bit9.svg?style=svg)](https://circleci.com/gh/GSA/ansible-bit9) |
+| [GSA/ansible-cylance](https://github.com/GSA/ansible-cylance) | [![CircleCI](https://circleci.com/gh/GSA/ansible-cylance.svg?style=svg)](https://circleci.com/gh/GSA/ansible-cylance) |
+| [GSA/ansible-fireeye](https://github.com/GSA/ansible-fireeye) | [![CircleCI](https://circleci.com/gh/GSA/ansible-fireeye.svg?style=svg)](https://circleci.com/gh/GSA/ansible-fireeye) |
+| [GSA/ansible-nessus](https://github.com/GSA/ansible-nessus) | [![CircleCI](https://circleci.com/gh/GSA/ansible-nessus.svg?style=svg)](https://circleci.com/gh/GSA/ansible-nessus) |
+| [GSA/cloudwatch-ansible-callback-plugin](https://github.com/GSA/cloudwatch-ansible-callback-plugin) | [![CircleCI](https://circleci.com/gh/GSA/cloudwatch-ansible-callback-plugin.svg?style=svg)](https://circleci.com/gh/GSA/cloudwatch-ansible-callback-plugin) |
 | [GSA/github-copy](https://github.com/GSA/github-copy) | [![CircleCI](https://circleci.com/gh/GSA/github-copy.svg?style=svg)](https://circleci.com/gh/GSA/github-copy) |
 | [GSA/grace-alerting](https://github.com/GSA/grace-alerting) | [![CircleCI](https://circleci.com/gh/GSA/grace-alerting.svg?style=svg)](https://circleci.com/gh/GSA/grace-alerting) |
 | [GSA/grace-ansible-lambda](https://github.com/GSA/grace-ansible-lambda) | [![CircleCI](https://circleci.com/gh/GSA/grace-ansible-lambda.svg?style=svg)](https://circleci.com/gh/GSA/grace-ansible-lambda) |
+| [GSA/grace-ansible-template](https://github.com/GSA/grace-ansible-template) | [![CircleCI](https://circleci.com/gh/GSA/grace-ansible-template.svg?style=svg)](https://circleci.com/gh/GSA/grace-ansible-template) |
 | [GSA/grace-app](https://github.com/GSA/grace-app) | ![No Builds](images/na.svg) |
 | [GSA/grace-circleci-builder](https://github.com/GSA/grace-circleci-builder) | [![CircleCI](https://circleci.com/gh/GSA/grace-circleci-builder.svg?style=svg)](https://circleci.com/gh/GSA/grace-circleci-builder) |
 | [GSA/grace-citest](https://github.com/GSA/grace-citest) | [![CircleCI](https://circleci.com/gh/GSA/grace-citest.svg?style=svg)](https://circleci.com/gh/GSA/grace-citest) |
@@ -31,6 +39,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-inventory](https://github.com/GSA/grace-inventory) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory.svg?style=svg)](https://circleci.com/gh/GSA/grace-inventory) |
 | [GSA/grace-log-parser](https://github.com/GSA/grace-log-parser) | [![CircleCI](https://circleci.com/gh/GSA/grace-log-parser.svg?style=svg)](https://circleci.com/gh/GSA/grace-log-parser) |
 | [GSA/grace-logging](https://github.com/GSA/grace-logging) | [![CircleCI](https://circleci.com/gh/GSA/grace-logging.svg?style=svg)](https://circleci.com/gh/GSA/grace-logging) |
+| [GSA/grace-paas-elb](https://github.com/GSA/grace-paas-elb) | [![CircleCI](https://circleci.com/gh/GSA/grace-paas-elb.svg?style=svg)](https://circleci.com/gh/GSA/grace-paas-elb) |
 | [GSA/grace-paas-network](https://github.com/GSA/grace-paas-network) | [![CircleCI](https://circleci.com/gh/GSA/grace-paas-network.svg?style=svg)](https://circleci.com/gh/GSA/grace-paas-network) |
 | [GSA/grace-paas-rds](https://github.com/GSA/grace-paas-rds) | [![CircleCI](https://circleci.com/gh/GSA/grace-paas-rds.svg?style=svg)](https://circleci.com/gh/GSA/grace-paas-rds) |
 | [GSA/grace-rotate-accesskeys](https://github.com/GSA/grace-rotate-accesskeys) | [![CircleCI](https://circleci.com/gh/GSA/grace-rotate-accesskeys.svg?style=svg)](https://circleci.com/gh/GSA/grace-rotate-accesskeys) |
