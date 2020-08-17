@@ -20,9 +20,13 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/ansible-activclient](https://github.com/GSA/ansible-activclient) | [![CircleCI](https://circleci.com/gh/GSA/ansible-activclient.svg?style=svg)](https://circleci.com/gh/GSA/ansible-activclient) |
 | [GSA/ansible-bigfix](https://github.com/GSA/ansible-bigfix) | [![CircleCI](https://circleci.com/gh/GSA/ansible-bigfix.svg?style=svg)](https://circleci.com/gh/GSA/ansible-bigfix) |
 | [GSA/ansible-bit9](https://github.com/GSA/ansible-bit9) | [![CircleCI](https://circleci.com/gh/GSA/ansible-bit9.svg?style=svg)](https://circleci.com/gh/GSA/ansible-bit9) |
+| [GSA/ansible-cloudwatch](https://github.com/GSA/ansible-cloudwatch) | [![CircleCI](https://circleci.com/gh/GSA/ansible-cloudwatch.svg?style=svg)](https://circleci.com/gh/GSA/ansible-cloudwatch) |
 | [GSA/ansible-cylance](https://github.com/GSA/ansible-cylance) | [![CircleCI](https://circleci.com/gh/GSA/ansible-cylance.svg?style=svg)](https://circleci.com/gh/GSA/ansible-cylance) |
 | [GSA/ansible-fireeye](https://github.com/GSA/ansible-fireeye) | [![CircleCI](https://circleci.com/gh/GSA/ansible-fireeye.svg?style=svg)](https://circleci.com/gh/GSA/ansible-fireeye) |
+| [GSA/ansible-firstboot](https://github.com/GSA/ansible-firstboot) | [![CircleCI](https://circleci.com/gh/GSA/ansible-firstboot.svg?style=svg)](https://circleci.com/gh/GSA/ansible-firstboot) |
 | [GSA/ansible-nessus](https://github.com/GSA/ansible-nessus) | [![CircleCI](https://circleci.com/gh/GSA/ansible-nessus.svg?style=svg)](https://circleci.com/gh/GSA/ansible-nessus) |
+| [GSA/ansible-snare](https://github.com/GSA/ansible-snare) | [![CircleCI](https://circleci.com/gh/GSA/ansible-snare.svg?style=svg)](https://circleci.com/gh/GSA/ansible-snare) |
+| [GSA/ansible-vrealize_orchestrator](https://github.com/GSA/ansible-vrealize_orchestrator) | [![CircleCI](https://circleci.com/gh/GSA/ansible-vrealize_orchestrator.svg?style=svg)](https://circleci.com/gh/GSA/ansible-vrealize_orchestrator) |
 | [GSA/cloudwatch-ansible-callback-plugin](https://github.com/GSA/cloudwatch-ansible-callback-plugin) | ![No Builds](images/nobuilds.svg) |
 | [GSA/github-copy](https://github.com/GSA/github-copy) | ![No Builds](images/nobuilds.svg) |
 | [GSA/grace-alerting](https://github.com/GSA/grace-alerting) | [![CircleCI](https://circleci.com/gh/GSA/grace-alerting.svg?style=svg)](https://circleci.com/gh/GSA/grace-alerting) |
@@ -68,6 +72,7 @@ You may wish to consult the following example repos for ideas or templates to im
 ## Deprecated ##
 | Repository | Build Status |
 | ---------- | ------------ |
+| [GSA/ansible-role-fireeyehx](https://github.com/GSA/ansible-role-fireeyehx) | ![No Builds](images/nobuilds.svg) |
 | [GSA/aws-account-broker](https://github.com/GSA/aws-account-broker) | [![CircleCI](https://circleci.com/gh/GSA/aws-account-broker.svg?style=svg)](https://circleci.com/gh/GSA/aws-account-broker) |
 | [GSA/ansible-fluentd](https://github.com/GSA/ansible-fluentd) | [![CircleCI](https://circleci.com/gh/GSA/ansible-fluentd.svg?style=svg)](https://circleci.com/gh/GSA/ansible-fluentd) |
 | [GSA/devsecops-cloud-custodian-rules](https://github.com/GSA/devsecops-cloud-custodian-rules) | ![No Builds](images/nobuilds.svg) |
