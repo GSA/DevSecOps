@@ -32,6 +32,7 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/cloudwatch-ansible-callback-plugin](https://github.com/GSA/cloudwatch-ansible-callback-plugin) | ![No Builds](images/nobuilds.svg) |
 | [GSA/github-copy](https://github.com/GSA/github-copy) | ![No Builds](images/nobuilds.svg) |
 | [GSA/grace-alerting](https://github.com/GSA/grace-alerting) | [![CircleCI](https://circleci.com/gh/GSA/grace-alerting.svg?style=svg)](https://circleci.com/gh/GSA/grace-alerting) |
+| [GSA/grace-ansible-batch](https://github.com/GSA/grace-ansible-batch) | [![CircleCI](https://circleci.com/gh/GSA/grace-ansible-batch.svg?style=svg)](https://circleci.com/gh/GSA/grace-ansible-batch) |
 | [GSA/grace-ansible-lambda](https://github.com/GSA/grace-ansible-lambda) | [![CircleCI](https://circleci.com/gh/GSA/grace-ansible-lambda.svg?style=svg)](https://circleci.com/gh/GSA/grace-ansible-lambda) |
 | [GSA/grace-ansible-template](https://github.com/GSA/grace-ansible-template) | [![CircleCI](https://circleci.com/gh/GSA/grace-ansible-template.svg?style=svg)](https://circleci.com/gh/GSA/grace-ansible-template) |
 | [GSA/grace-app](https://github.com/GSA/grace-app) | ![No Builds](images/nobuilds.svg) |
@@ -40,6 +41,8 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-cloudcustodian](https://github.com/GSA/grace-cloudcustodian) | [![CircleCI](https://circleci.com/gh/GSA/grace-cloudcustodian.svg?style=svg)](https://circleci.com/gh/GSA/grace-cloudcustodian) |
 | [GSA/grace-config](https://github.com/GSA/grace-config) | [![CircleCI](https://circleci.com/gh/GSA/grace-config.svg?style=svg)](https://circleci.com/gh/GSA/grace-config) |
 | [GSA/grace-config-differ](https://github.com/GSA/grace-config-differ) | [![CircleCI](https://circleci.com/gh/GSA/grace-config-differ.svg?style=svg)](https://circleci.com/gh/GSA/grace-config-differ) |
+| [GSA/grace-decider](https://github.com/GSA/grace-decider) | [![CircleCI](https://circleci.com/gh/GSA/grace-decider.svg?style=svg)](https://circleci.com/gh/GSA/grace-decider) |
+| [GSA/grace-ecr](https://github.com/GSA/grace-ecr) | [![CircleCI](https://circleci.com/gh/GSA/grace-ecr.svg?style=svg)](https://circleci.com/gh/GSA/grace-ecr) |
 | [GSA/grace-fcs-network](https://github.com/GSA/grace-fcs-network) | [![CircleCI](https://circleci.com/gh/GSA/grace-fcs-network.svg?style=svg)](https://circleci.com/gh/GSA/grace-fcs-network) |
 | [GSA/grace-iam](https://github.com/GSA/grace-iam) | [![CircleCI](https://circleci.com/gh/GSA/grace-iam.svg?style=svg)](https://circleci.com/gh/GSA/grace-iam) |
 | [GSA/grace-inventory](https://github.com/GSA/grace-inventory) | [![CircleCI](https://circleci.com/gh/GSA/grace-inventory.svg?style=svg)](https://circleci.com/gh/GSA/grace-inventory) |
@@ -73,6 +76,10 @@ You may wish to consult the following example repos for ideas or templates to im
 | [GSA/grace-repos](https://github.com/GSA/grace-repos) | [![CircleCI](https://circleci.com/gh/GSA/grace-repos.svg?style=svg&circle-token=c23bc2f80e5fdbe829c2d374661a93d36963171d)](https://circleci.com/gh/GSA/grace-repos) |
 | [GSA/grace-ssp](https://github.com/GSA/grace-ssp) | ![No Builds](images/nobuilds.svg) |
 | [GSA/IDT-BigFix](https://github.com/GSA/IDT-BigFix) | [![CircleCI](https://circleci.com/gh/GSA/IDT-BigFix.svg?style=svg&circle-token=14c1b058f570454f69bd3fee2392fd903030a15c)](https://circleci.com/gh/GSA/IDT-BigFix) |
+| [GSA/idt-hybrid-ansible](https://github.com/GSA/idt-hybrid-ansible) | ![No Builds](images/nobuilds.svg) |
+| [GSA/idt-hybrid-vra](https://github.com/GSA/idt-hybrid-vra) | ![No Builds](images/nobuilds.svg) |
+| [GSA/idt-hybrid-vro](https://github.com/GSA/idt-hybrid-vro) | ![No Builds](images/nobuilds.svg) |
+| [GSA/tgw-core](https://github.com/GSA/tgw-core) | ![No Builds](images/nobuilds.svg) |
 
 ## Deprecated ##
 | Repository | Build Status |
